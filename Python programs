@@ -1,0 +1,179 @@
+#1/ menu with addition, subtraction and printing numbers functions
+def dodawanie():
+    sum = 0
+    n = int(input("Ile liczb?: "))
+    print("Wpisz",n, "liczb(y): ")
+    for i in range(n):
+        c = int(input("Wpisz liczbę: "))
+        sum = sum + c
+    print("Suma to: ", sum)
+
+def odejmowanie():
+    x = int(input("Wpisz 1 liczbę: "))
+    y = int(input("Wpisz 2 liczbę: "))
+    print("twoja liczba to:", x - y)
+
+def wypisywanie(*z):
+    print(1,2,3,4,5)
+
+x = 0
+while x !=4:
+    print("\nMenu")
+    print("1 = dodanie n liczb")
+    print("2 = odejmowanie 2 liczb")
+    print("3 = wypisywanie 5 liczb")
+    print("4 = wyjście z menu\n")
+    x = int(input("\nCo chcesz zrobić?: "))
+    match x:
+        case 1:
+            dodawanie()
+        case 2:
+            odejmowanie()
+        case 3:
+            wypisywanie()
+        case 4:
+            break
+print("Koniec")
+
+#2/ heads or tails
+import random
+user=0
+computer=0
+y = str(input("orzeł czy reszka? "))
+x = random.choice(["orzeł","reszka"])
+if(x==y):
+ print('zgadłeś')
+else:
+ print('nie zgadłeś')
+print("użytkownik: ",y)
+print("komuter: ",x)
+
+#3/ bubble sort
+def sortowanie(lista):
+    a = len(lista)
+    b = False
+    for i in range (a):
+        for j in range (0,a-1):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+                b = True
+        if b == False: break
+    return lista
+print(sortowanie([1,5,2,6,3,4,12]))
+
+#4/ fizzbuzz
+for i in range(1,101):
+ if (i%3==0 and i%5==0):
+  print("FizzBuzz")
+ elif (i%3==0):
+  print("Fizz")
+ elif (i%5==0):
+  print("Buzz")
+ else:
+  print(i)
+
+#5/ min and max value
+max=0
+min=0
+for i in lista:
+ if (min == 0 or i < min):
+   min = i
+ if (max == 0 or i > max):
+   max = i
+print(min,"min")
+print(max,"max")
+
+#6/ sum of values in array
+def sumowanie(lista):
+    n = len(lista)
+    suma = 0
+    for i in range (0,n):
+        suma = suma + lista[i]
+    return suma
+a = sumowanie([1,2,3,4,5])
+print(a)
+
+#7/ sum of even and odd numbers
+def parzysta(lista):
+    n = len(lista)
+    p = 0
+    np = 0
+    for i in range(0,n):
+        if lista[i] % 2 == 0:
+            p += 1
+        if lista[i] % 2 != 0:
+            np += 1
+    return (p,np)
+    print("ilosc liczb parzystych", p)
+    print("ilosc liczb nieparzystych", np)
+parzysta([1,2,3,4,5,67])
+
+#8/ reverse of values in an array
+def zamiana_miejsc(lista):
+    n = len(lista)
+    new_list = []
+    for i in range(1,n+1):
+        new_list.append(lista[-i])
+    return new_list
+out = zamiana_miejsc([0,1,2,3,4,5,6,7,8,9,10,11])
+print(out)
+
+#9/ palindrom
+def palindrom(lista):
+    n = len(lista)
+    for i in range(0,int(n/2)):
+        if lista[i] != lista[n-i-1]:
+            return False
+    return True
+a = [1,2,2,1]
+b = palindrom(a)
+if (b):
+    print("yes")
+else:
+    print("no")
+
+#10/ cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
+def bankomat():
+    x = 0
+    balance = int(input("Podaj stan konta pomiedzy 0 a 500 zl : "))
+    while(x != 4):
+        print("\nMenu")
+        print("1 = Wypisz stan konta:")
+        print("2 = Wplac pieniadze:")
+        print("3 = Wyplac pieniadze:")
+        print("4 = Wyjdz:")
+        x = int(input("\nWybierz akcje:"))
+        if(x == 1):
+            print("\nStan konta:", balance)
+        elif(x == 2):
+            if(balance == 500):
+                print("Nie mozna wplacic wiecej pieniedzy na konto. Stan konta nie moze przekraczac 500 zl")
+            else:
+                action = int(input("Ile pieniędzy wplacic?:"))
+                if(action % 50 == 0):
+                    balance = balance + action
+                elif(action % 20 == 0):
+                    balance = balance + action
+                elif(action % 10 == 0):
+                    balance = balance + action
+                else:
+                    print("Bankomat przyjmuje tylko banknoty o nominalach: 50,20,10 zł. Podaj inna wartosc.")
+        elif(x == 3):
+            if(balance < 10):
+                print("Brak srodkow na koncie")
+            else:
+                action = int(input("Ile pieniędzy wydać?:"))
+                if(action % 50 == 0):
+                    balance = balance - action
+                elif(action % 20 == 0):
+                    balance = balance - action
+                elif(action % 10 == 0):
+                    balance = balance - action
+                else:
+                    print("Bankomat wydaje tylko banknoty o nominalach: 50,20,10 zł. Podaj inna wartosc.")
+        elif(x == 4):
+            print("Wylogowano")
+            break
+        else:
+            print("Zla akcja")
+bankomat()
