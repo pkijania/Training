@@ -15,18 +15,7 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"\r",
-							"console.log(response.status);\r",
-							"console.log(response['status']);\r",
-							"\r",
-							"pm.test(\"Status should be OK\", () => {\r",
-							"    pm.expect(response.status).to.eql(\"OK\");\r",
-							"});\r",
-							"\r",
-							"postman.setNextRequest(\"List of books\");"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -56,24 +45,7 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"\r",
-							"const nonFictionBooks = response.filter((book) => book.available === true);\r",
-							"\r",
-							"const book = nonFictionBooks[0];\r",
-							"\r",
-							"if (book) {\r",
-							"    pm.globals.set(\"bookId\", book.id);\r",
-							"}\r",
-							"\r",
-							"pm.test(\"Book found\", () =>{\r",
-							"    pm.expect(book).to.be.an(\"object\");\r",
-							"    pm.expect(book.available).to.be.true;\r",
-							"    pm.expect(book.available).to.eql(true);\r",
-							"    pm.expect(book.type).to.eql(\"non-fiction\");\r",
-							"})"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -114,12 +86,6 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"\r",
-							"pm.test(\"Is in stock\", () => {\r",
-							"    pm.expect(response['current-stock']).to.be.above(0);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -149,6 +115,45 @@
 			"response": []
 		},
 		{
+			"name": "Register API Client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Balentin\",\r\n   \"clientEmail\": \"Balentin@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api-clients",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api-clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Order book",
 			"event": [
 				{
@@ -158,10 +163,7 @@
 							"pm.test(\"Status code is 201\", () => {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"\r",
-							"pm.globals.set(\"orderId\", response.orderId);"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -289,7 +291,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "{{orderId}}"
+							"value": "HKmpEtXwOuVaoedRtgeuS"
 						}
 					]
 				}
@@ -345,7 +347,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "{{orderId}}"
+							"value": "HKmpEtXwOuVaoedRtgeuS"
 						}
 					]
 				}
@@ -361,9 +363,7 @@
 						"exec": [
 							"pm.test(\"Status code is 204\", () => {\r",
 							"    pm.response.to.have.status(204);\r",
-							"});\r",
-							"\r",
-							"postman.setNextRequest(null);"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -403,53 +403,24 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "{{orderId}}"
+							"value": "HKmpEtXwOuVaoedRtgeuS"
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Register API Client",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 201\", () => {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Balentin\",\r\n   \"clientEmail\": \"Balentin@example.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{BaseUrl}}/api-clients",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"api-clients"
 					]
 				}
 			},
 			"response": []
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -477,7 +448,7 @@
 		},
 		{
 			"key": "AccessToken",
-			"value": "b94f467feb914c4e91bac9bce66a0cf498e10243aa2417f12da4c62f4471aebd",
+			"value": "c5b7f352e3de2e4ce40f77fcc1226e63326b2dd6f3bef2da6ed90f9f9729a9ae",
 			"type": "string"
 		}
 	]

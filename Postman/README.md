@@ -1,6 +1,8 @@
 ### Intro
 
-All solution for below excercises can be found in [postman export](SimpleBookAPI.postman_collection.json)
+Exercices are based on the Simple Books API - https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md
+
+All solutions for below excercises can be found in [postman export](SimpleBookAPI.postman_collection.json)
 
 ### 1. Api status
 
@@ -10,7 +12,7 @@ Retrieve api status:
 
 ##### Solution:
 
-Request name: `Api Status`
+Request name: `GET Api Status`
 
 ### 2. List of books
 
@@ -20,7 +22,7 @@ View list of books:
 
 ##### Solution:
 
-Request name: `Api Status`
+Request name: `GET - List of books`
 
 ### 3. Get single book
 
@@ -30,59 +32,9 @@ View one book:
 
 ##### Solution:
 
-Request name: `Api Status`
+Request name: `GET - Get single book`
 
-### 4. Order book
-
-##### Question:
-
-Place an order of a book:
-
-##### Solution:
-
-Request name: `Api Status`
-
-### 5. Get all book orders
-
-##### Question:
-
-View all book orders:
-
-##### Solution:
-
-Request name: `Api Status`
-
-### 6. Get an order
-
-##### Question:
-
-View an order of a book:
-
-##### Solution:
-
-Request name: `Api Status`
-
-### 7. Update an order
-
-##### Question:
-
-Update existing order:
-
-##### Solution:
-
-Request name: `Api Status`
-
-### 8. Delete an order
-
-##### Question:
-
-Delete an order:
-
-##### Solution:
-
-Request name: `Api Status`
-
-### 9. Register API Client
+### 4. Register API Client
 
 ##### Question:
 
@@ -90,4 +42,54 @@ Register API Client:
 
 ##### Solution:
 
-Request name: `Api Status`
+Request name: `POST - Register API Client`
+
+### 5. Order book
+
+##### Question:
+
+Place an order of a book:
+
+##### Solution:
+
+Request name: `POST - Order book`
+
+### 6. Get all book orders
+
+##### Question:
+
+View all book orders:
+
+##### Solution:
+
+Request name: `GET - Get all book orders`
+
+### 7. Get an order
+
+##### Question:
+
+View an order of a book:
+
+##### Solution:
+
+Request name: `GET - Get an order`
+
+### 8. Update an order
+
+##### Question:
+
+Update existing order:
+
+##### Solution:
+
+Request name: `Patch - Update an order`
+
+### 9. Delete an order
+
+##### Question:
+
+Delete an order:
+
+##### Solution:
+
+Request name: `DEL - Delete an order`

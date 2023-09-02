@@ -1,4 +1,4 @@
--- # 5. Min and max value
+# 5. Min and max value
 max=0
 min=0
 for i in lista:
