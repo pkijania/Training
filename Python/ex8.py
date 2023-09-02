@@ -1,4 +1,5 @@
 # 8. Reverse of values in an array
+
 def zamiana_miejsc(lista):
     n = len(lista)
     new_list = []

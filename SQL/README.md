@@ -2,56 +2,26 @@
 
 Please execute setup.sql script before running any below queries. 
 
-### 1. Employee - Supervisor link
+### Ex1
 
-##### Question:
+Task: Design query to present employee and supervisor in one row
 
-Design query to present employee and supervisor in one row:
+[Solution](ex1.sql)
 
-##### Solution:
+### Ex2
 
-```
-SELECT CONCAT(emp.name, ' ', emp.surname) AS employee_name, CONCAT(sup.name, ' ', sup.surname) AS supervisor_name
-FROM EMPLOYEE emp
-LEFT JOIN EMPLOYEE sup ON (sup.employee_id = emp.supervisor_id)
-```
-### 2. Employees aged between 29 and 55 years old
+Task: Design query to present employees aged between 29 and 55 years old ordered by column "name"
 
-##### Question:
+[Solution](ex2.sql)
 
-Design query to present employees aged between 29 and 55 years old ordered by column "name":
+### Ex3
 
-##### Solution:
+Task: Design query to present employees with salary higher than employee with id 5
 
-```
-SELECT employee_id, name, surname
-FROM EMPLOYEE
-WHERE age BETWEEN 29 AND 55
-ORDER BY name
-```
-### 3. Employees with salary higher than employee with id 5
+[Solution](ex3.sql)
 
-##### Question:
+### Ex4
 
-Design query to present employees with salary higher than employee with id 5:
+Task: Design query to present data (id, name, surname, age, salary, type_of_contract) in one table
 
-##### Solution:
-
-```
-SELECT COUNT(employee_id) AS salary
-FROM CONTRACT
-WHERE salary > (SELECT salary FROM CONTRACT WHERE employee_id = 5)
-```
-### 4. Data from both tables
-
-##### Question:
-
-Design query to present data from both tables:
-
-##### Solution:
-
-```
-SELECT EMPLOYEE.employee_id, name, surname, age, salary, type_of_contract
-FROM EMPLOYEE
-JOIN CONTRACT ON (EMPLOYEE.employee_id = CONTRACT.employee_id)
-```
+[Solution](ex4.sql)

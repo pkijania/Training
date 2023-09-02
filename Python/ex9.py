@@ -1,4 +1,5 @@
 # 9. Palindrom
+
 def palindrom(lista):
     n = len(lista)
     for i in range(0,int(n/2)):

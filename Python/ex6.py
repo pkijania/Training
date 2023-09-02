@@ -1,4 +1,5 @@
 # 6. Sum of values in array
+
 def sumowanie(lista):
     n = len(lista)
     suma = 0
