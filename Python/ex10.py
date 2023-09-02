@@ -1,4 +1,4 @@
--- # 10. Cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
+# 10. Cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
 def bankomat():
     x = 0
     balance = int(input("Podaj stan konta pomiedzy 0 a 500 zl : "))

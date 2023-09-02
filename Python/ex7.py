@@ -1,4 +1,4 @@
--- # 7. Sum of even and odd numbers
+# 7. Sum of even and odd numbers
 def parzysta(lista):
     n = len(lista)
     p = 0

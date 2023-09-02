@@ -1,4 +1,4 @@
--- # 2. Heads or tails
+# 2. Heads or tails
 import random
 user=0
 computer=0

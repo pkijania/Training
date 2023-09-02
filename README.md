@@ -5,17 +5,16 @@ Repository for learning purpose
 
 Small project for learning advanced SQLs
 
-[Excercies](SQL/README.md)
+[Exercises](SQL/README.md)
 
 ### Python
 
 Various small excercises
 
-[Excercies](Python/README.md)
+[Exercises](Python/README.md)
 
 ### Practice
 
 Task from manual testing practice 
 
-[Excercies](Practice/README.md)
-
+[Exercises](Testing_practice/README.md)
