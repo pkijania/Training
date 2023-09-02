@@ -1,22 +1,22 @@
 # 10. Cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
 
-def bankomat():
+def cashmachine():
     x = 0
-    balance = int(input("Podaj stan konta pomiedzy 0 a 500 zl : "))
+    balance = int(input("Enter account balance between 0 and 500 zl : "))
     while(x != 4):
         print("\nMenu")
-        print("1 = Wypisz stan konta:")
-        print("2 = Wplac pieniadze:")
-        print("3 = Wyplac pieniadze:")
-        print("4 = Wyjdz:")
-        x = int(input("\nWybierz akcje:"))
+        print("1 = Show account balance:")
+        print("2 = Deposit money:")
+        print("3 = Pay out money:")
+        print("4 = Exit:")
+        x = int(input("\nChoose action:"))
         if(x == 1):
-            print("\nStan konta:", balance)
+            print("\nAccount balance:", balance)
         elif(x == 2):
             if(balance == 500):
-                print("Nie mozna wplacic wiecej pieniedzy na konto. Stan konta nie moze przekraczac 500 zl")
+                print("Cant deposit more money. Account balance cannot exceed 500 zł")
             else:
-                action = int(input("Ile pieniędzy wplacic?:"))
+                action = int(input("How much money to deposit?:"))
                 if(action % 50 == 0):
                     balance = balance + action
                 elif(action % 20 == 0):
@@ -24,12 +24,12 @@ def bankomat():
                 elif(action % 10 == 0):
                     balance = balance + action
                 else:
-                    print("Bankomat przyjmuje tylko banknoty o nominalach: 50,20,10 zł. Podaj inna wartosc.")
+                    print("Cashmachine depisits only bank notes of 50,20 and 10 zł value. Enter different value.")
         elif(x == 3):
             if(balance < 10):
-                print("Brak srodkow na koncie")
+                print("Lack of funds on an account")
             else:
-                action = int(input("Ile pieniędzy wydać?:"))
+                action = int(input("How much money to pay out ?:"))
                 if(action % 50 == 0):
                     balance = balance - action
                 elif(action % 20 == 0):
@@ -37,10 +37,10 @@ def bankomat():
                 elif(action % 10 == 0):
                     balance = balance - action
                 else:
-                    print("Bankomat wydaje tylko banknoty o nominalach: 50,20,10 zł. Podaj inna wartosc.")
+                    print("Cashmachine pays out only bank notes of 50,20 and 10 zł value. Enter different value.")
         elif(x == 4):
-            print("Wylogowano")
+            print("Logged out")
             break
         else:
-            print("Zla akcja")
-bankomat()
+            print("Wrong action")
+cashmachine()

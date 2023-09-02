@@ -3,11 +3,11 @@
 import random
 user=0
 computer=0
-y = str(input("orzeł czy reszka? "))
-x = random.choice(["orzeł","reszka"])
+y = str(input("heads or tails? "))
+x = random.choice(["heads","tails"])
 if(x==y):
- print('zgadłeś')
+ print('you guessed')
 else:
- print('nie zgadłeś')
-print("użytkownik: ",y)
-print("komuter: ",x)
+ print('you didnt guess')
+print("user: ",y)
+print("computer: ",x)

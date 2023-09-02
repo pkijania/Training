@@ -1,10 +1,10 @@
 # 6. Sum of values in array
 
-def sumowanie(lista):
-    n = len(lista)
-    suma = 0
+def sum_of_values(list):
+    n = len(list)
+    sum = 0
     for i in range (0,n):
-        suma = suma + lista[i]
-    return suma
-a = sumowanie([1,2,3,4,5])
+        sum = sum + list[i]
+    return sum
+a = sum_of_values([1,2,3,4,5])
 print(a)

@@ -1,13 +1,13 @@
-# 9. Palindrom
+# 9. Palindrome
 
-def palindrom(lista):
-    n = len(lista)
+def palindrome(list):
+    n = len(list)
     for i in range(0,int(n/2)):
-        if lista[i] != lista[n-i-1]:
+        if list[i] != list[n-i-1]:
             return False
     return True
 a = [1,2,2,1]
-b = palindrom(a)
+b = palindrome(a)
 if (b):
     print("yes")
 else:

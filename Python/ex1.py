@@ -1,37 +1,37 @@
 # 1. Menu with addition, subtraction and printing numbers functions
 
-def dodawanie():
+def addition():
     sum = 0
-    n = int(input("Ile liczb?: "))
-    print("Wpisz",n, "liczb(y): ")
+    n = int(input("How many digits?: "))
+    print("Print",n, "digit(s): ")
     for i in range(n):
-        c = int(input("Wpisz liczbę: "))
+        c = int(input("Type a digit: "))
         sum = sum + c
-    print("Suma to: ", sum)
+    print("Sum is: ", sum)
 
-def odejmowanie():
-    x = int(input("Wpisz 1 liczbę: "))
-    y = int(input("Wpisz 2 liczbę: "))
-    print("twoja liczba to:", x - y)
+def subtraction():
+    x = int(input("Enter 1 digit: "))
+    y = int(input("Enter 2 digit: "))
+    print("Your number is:", x - y)
 
-def wypisywanie(*z):
+def printing(*z):
     print(1,2,3,4,5)
 
 x = 0
 while x !=4:
     print("\nMenu")
-    print("1 = dodanie n liczb")
-    print("2 = odejmowanie 2 liczb")
-    print("3 = wypisywanie 5 liczb")
-    print("4 = wyjście z menu\n")
-    x = int(input("\nCo chcesz zrobić?: "))
+    print("1 = addition of n digits")
+    print("2 = subtraction of 2 digits")
+    print("3 = printing 5 digits")
+    print("4 = Ending the program\n")
+    x = int(input("\nWhat would you like to do?: "))
     match x:
         case 1:
-            dodawanie()
+            addition()
         case 2:
-            odejmowanie()
+            subtraction()
         case 3:
-            wypisywanie()
+            printing()
         case 4:
             break
-print("Koniec")
+print("End")
