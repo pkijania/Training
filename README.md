@@ -1,11 +1,23 @@
 # Testing
 Repository for learning purpose
 
-### SQL 
+### Git
 
-Small project for learning advanced SQLs
+Git commands
 
-[Exercises](SQL/README.md)
+[Exercices](Git/README.md)
+
+### Linux
+
+Linux commands
+
+[Exercices](Linux/README.md)
+
+### Postman
+
+Building simple API requests
+
+[Exercices](Postman/README.md)
 
 ### Python
 
@@ -13,8 +25,14 @@ Various small excercises
 
 [Exercises](Python/README.md)
 
-### Practice
+### SQL 
 
-Task from manual testing practice 
+Small project for learning advanced SQLs
+
+[Exercises](SQL/README.md)
+
+### Testing practice
+
+Tasks from manual testing practice 
 
 [Exercises](Testing_practice/README.md)

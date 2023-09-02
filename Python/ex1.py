@@ -1,4 +1,5 @@
 # 1. Menu with addition, subtraction and printing numbers functions
+
 def dodawanie():
     sum = 0
     n = int(input("Ile liczb?: "))

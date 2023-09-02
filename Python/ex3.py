@@ -1,4 +1,5 @@
 # 3. Bubble sort
+
 def sortowanie(lista):
     a = len(lista)
     b = False
