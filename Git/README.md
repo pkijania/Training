@@ -9,7 +9,7 @@ git status
 #### 2. Initialize new Git data base
 
 ```
-git innit
+git init
 ```
 
 #### 3. Copy existing data base
