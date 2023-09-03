@@ -70,3 +70,51 @@ git merge
 ```
 git stash
 ```
+
+#### 13. Download contents from a remote repository
+
+```
+git fetch
+```
+
+#### 14. Exclude a file in your working directory
+
+```
+.gitignore
+```
+
+#### 15. Tag a point in a repository
+
+```
+git tag
+```
+
+#### 16. Switch branches
+
+```
+git checkout
+```
+
+#### 17. Rewind history without changing content of local files
+
+```
+git reset
+```
+
+#### 18. Undo a change
+
+```
+git revert
+```
+
+#### 19. View expanded details on a Git object
+
+```
+git show
+```
+
+#### 20. Remove untracked files from the working tree
+
+```
+git clean
+```
