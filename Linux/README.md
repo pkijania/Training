@@ -45,13 +45,13 @@ mv
 #### 7. Read a file 
 
 ```
-cat
+cat, more, less, head, tail
 ```
 
 #### 8. Print information about a command 
 
 ```
-man, info, whatis, apropos
+man, info, whatis, apropos, --help
 ```
 
 #### 9. Check how long the system is running 
@@ -64,4 +64,94 @@ uptime
 
 ```
 uname
+```
+
+#### 11. Delete a file
+
+```
+rm
+```
+
+#### 12. Display currenty active processes
+
+```
+ps
+```
+
+#### 13. Display all running processes
+
+```
+top
+```
+
+#### 14. Kill process
+
+```
+kill
+```
+
+#### 15. Show date and time
+
+```
+date
+```
+
+#### 16. Show months calendar
+
+```
+cal
+```
+
+#### 17. Check who is online
+
+```
+w
+```
+
+#### 18. Who are you logged in as
+
+```
+whoami
+```
+
+#### 19. Display information about user
+
+```
+finger
+```
+
+#### 20. Show disk usage
+
+```
+df
+```
+
+#### 21. Show directory space usage
+
+```
+du
+```
+
+#### 22. Show memory or swap usage
+
+```
+free
+```
+
+#### 23. Show possible locations of app
+
+```
+whereis
+```
+
+#### 24. Show which app will be run by default
+
+```
+which
+```
+
+#### 25. Ping host and output results
+
+```
+ping
 ```
