@@ -155,3 +155,27 @@ which
 ```
 ping
 ```
+
+#### 26. Identify the type of the input command
+
+```
+type
+```
+
+#### 27. Define new command
+
+```
+alias
+```
+
+#### 28. Removes created aliase
+
+```
+unalias
+```
+
+#### 29. Create hard link
+
+```
+ln
+```
