@@ -36,146 +36,237 @@ touch
 cp
 ```
 
-#### 6. Move a file or a folder
+#### 7. Move a file or a folder
 
 ```
 mv
 ```
 
-#### 7. Read a file 
+#### 8. Read a file 
 
 ```
 cat, more, less, head, tail
 ```
 
-#### 8. Print information about a command 
+#### 9. Print information about a command 
 
 ```
 man, info, whatis, apropos, --help
 ```
 
-#### 9. Check how long the system is running 
+#### 10. Check how long the system is running 
 
 ```
 uptime
 ```
 
-#### 10. Print the name of kernel
+#### 11. Print the name of kernel
 
 ```
 uname
 ```
 
-#### 11. Delete a file
+#### 12. Delete a file
 
 ```
 rm
 ```
 
-#### 12. Display currenty active processes
+#### 13. Display currenty active processes
 
 ```
 ps
 ```
 
-#### 13. Display all running processes
+#### 14. Display all running processes
 
 ```
 top
 ```
 
-#### 14. Kill process
+#### 15. Kill process
 
 ```
 kill
 ```
 
-#### 15. Show date and time
+#### 16. Show date and time
 
 ```
 date
 ```
 
-#### 16. Show months calendar
+#### 17. Show months calendar
 
 ```
 cal
 ```
 
-#### 17. Check who is online
+#### 18. Check who is online
 
 ```
 w
 ```
 
-#### 18. Who are you logged in as
+#### 19. Who are you logged in as
 
 ```
 whoami
 ```
 
-#### 19. Display information about user
+#### 20. Display information about user
 
 ```
 finger
 ```
 
-#### 20. Show disk usage
+#### 21. Show disk usage
 
 ```
 df
 ```
 
-#### 21. Show directory space usage
+#### 22. Show directory space usage
 
 ```
 du
 ```
 
-#### 22. Show memory or swap usage
+#### 23. Show memory or swap usage
 
 ```
 free
 ```
 
-#### 23. Show possible locations of app
+#### 24. Show possible locations of app
 
 ```
 whereis
 ```
 
-#### 24. Show which app will be run by default
+#### 25. Show which app will be run by default
 
 ```
 which
 ```
 
-#### 25. Ping host and output results
+#### 26. Ping host and output results
 
 ```
 ping
 ```
 
-#### 26. Identify the type of the input command
+#### 27. Identify the type of the input command
 
 ```
 type
 ```
 
-#### 27. Define new command
+#### 28. Define new command
 
 ```
 alias
 ```
 
-#### 28. Removes created aliase
+#### 29. Removes created aliase
 
 ```
 unalias
 ```
 
-#### 29. Create hard link
+#### 30. Create hard link
 
 ```
 ln
+```
+
+#### 31. Show history of used commands
+
+```
+history
+```
+
+#### 32. Search text and strings in a file
+
+```
+grep
+```
+
+#### 33. Display the number of lines, words, and bytes in the file
+
+```
+wc
+```
+
+#### 34. Find the unique lines in a given input and remove the duplicated lines
+
+```
+uniq
+```
+
+#### 35. Sort lines of text files
+
+```
+sort
+```
+
+#### 36. Display lines of text or strings
+
+```
+echo
+```
+
+#### 37. Zip files
+
+```
+zip
+```
+
+#### 38. Unzip files
+
+```
+unzip
+```
+
+#### 39. Create or update passwords for existing users
+
+```
+passwd
+```
+
+### 40. Add new user or change existing users data
+
+```
+useradd, usermod
+```
+
+### 41. Escalate privileges
+
+```
+sudo
+```
+
+### 42. Extract and compress files
+
+```
+tar
+```
+
+### 43. Check if two files are identical
+
+```
+cmp
+```
+
+
+### 44. Print user ID
+
+```
+id
+```
+
+### 45. Export environment variables
+
+```
+export
 ```
