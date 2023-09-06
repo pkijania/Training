@@ -108,7 +108,7 @@ cal
 w
 ```
 
-#### 19. Who are you logged in as
+#### 19. Show who are you logged in as
 
 ```
 whoami
@@ -168,7 +168,7 @@ type
 alias
 ```
 
-#### 29. Removes created aliase
+#### 29. Remove created alias
 
 ```
 unalias
@@ -258,7 +258,6 @@ tar
 cmp
 ```
 
-
 ### 44. Print user ID
 
 ```
@@ -269,4 +268,118 @@ id
 
 ```
 export
+```
+
+### 46. Change file permissions
+
+```
+chmod
+```
+
+### 47. Set default file permission
+
+```
+umask
+```
+
+### 48. Run commands with another user's privileges
+
+```
+su
+```
+
+### 49. Change the file Owner
+
+```
+chown
+```
+
+### 50. Change the group ownership of a file or directory
+
+```
+chgrp
+```
+
+### 51. List the jobs that you are running in the background and in the foreground
+
+```
+jobs
+```
+
+### 52. Place foreground jobs in background
+
+```
+bg
+```
+
+### 53. Place background jobs in foreground
+
+```
+fg
+```
+
+### 54. Stop all running services
+
+```
+shutdown
+```
+
+### 55. Display or set both shell and environment variables
+
+```
+set
+```
+
+### 56. Display the values of environment variables in the current shell
+
+```
+printenv
+```
+
+### 57. Display the network configuration of a system
+
+```
+ip
+```
+
+### 58. Show network status and protocol statistics
+
+```
+netstat
+```
+
+### 59. Print the route that a packet takes to reach the host
+
+```
+traceroute
+```
+
+### 60. Connect a computer system to a remote server using the FTP protocol
+
+```
+ftp
+```
+
+### 61. Find files and directories
+
+```
+find
+```
+
+### 62. Find a file using the file name
+
+```
+locate
+```
+
+### 63. Print out the status of a file
+
+```
+stat
+```
+
+### 64. Synchronize a file or a directory remotely
+
+```
+rsync
 ```
