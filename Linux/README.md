@@ -105,7 +105,7 @@ cal
 #### 18. Check who is online
 
 ```
-w
+w, who
 ```
 
 #### 19. Show who are you logged in as
@@ -472,4 +472,45 @@ lpq
 
 ```
 lprm
+```
+
+#### 80. Securely connect to a remote server/system
+
+```
+ssh
+```
+
+#### 81. Use command line text editor
+
+```
+nano, vim
+```
+
+#### 82. Securely delete files by overwriting their contents with random data
+
+```
+shred
+```
+
+#### 83. Clear terminal
+
+```
+clear
+```
+
+#### 84. Exit terminal
+
+```
+exit
+```
+
+#### 85. Transfer data to or from a server
+```
+curl
+```
+
+#### 86. Manage deb packages on Linux
+
+```
+apt
 ```
