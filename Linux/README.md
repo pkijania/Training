@@ -504,13 +504,13 @@ clear
 exit
 ```
 
-#### 85. Manage deb packages on Linux
+#### 85. Transfer data to or from a server
+```
+curl
+```
+
+#### 86. Manage deb packages on Linux
 
 ```
 apt
-```
-
-#### 86. Transfer data to or from a server
-```
-curl
 ```
