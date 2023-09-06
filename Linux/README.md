@@ -234,152 +234,242 @@ unzip
 passwd
 ```
 
-### 40. Add new user or change existing users data
+#### 40. Add new user or change existing users data
 
 ```
 useradd, usermod
 ```
 
-### 41. Escalate privileges
+#### 41. Escalate privileges
 
 ```
 sudo
 ```
 
-### 42. Extract and compress files
+#### 42. Extract and compress files
 
 ```
 tar
 ```
 
-### 43. Check if two files are identical
+#### 43. Check if two files are identical
 
 ```
 cmp
 ```
 
-### 44. Print user ID
+#### 44. Print user ID
 
 ```
 id
 ```
 
-### 45. Export environment variables
+#### 45. Export environment variables
 
 ```
 export
 ```
 
-### 46. Change file permissions
+#### 46. Change file permissions
 
 ```
 chmod
 ```
 
-### 47. Set default file permission
+#### 47. Set default file permission
 
 ```
 umask
 ```
 
-### 48. Run commands with another user's privileges
+#### 48. Run commands with another user's privileges
 
 ```
 su
 ```
 
-### 49. Change the file Owner
+#### 49. Change the file Owner
 
 ```
 chown
 ```
 
-### 50. Change the group ownership of a file or directory
+#### 50. Change the group ownership of a file or directory
 
 ```
 chgrp
 ```
 
-### 51. List the jobs that you are running in the background and in the foreground
+#### 51. List the jobs that you are running in the background and in the foreground
 
 ```
 jobs
 ```
 
-### 52. Place foreground jobs in background
+#### 52. Place foreground jobs in background
 
 ```
 bg
 ```
 
-### 53. Place background jobs in foreground
+#### 53. Place background jobs in foreground
 
 ```
 fg
 ```
 
-### 54. Stop all running services
+#### 54. Stop all running services
 
 ```
 shutdown
 ```
 
-### 55. Display or set both shell and environment variables
+#### 55. Display or set both shell and environment variables
 
 ```
 set
 ```
 
-### 56. Display the values of environment variables in the current shell
+#### 56. Display the values of environment variables in the current shell
 
 ```
 printenv
 ```
 
-### 57. Display the network configuration of a system
+#### 57. Display the network configuration of a system
 
 ```
 ip
 ```
 
-### 58. Show network status and protocol statistics
+#### 58. Show network status and protocol statistics
 
 ```
 netstat
 ```
 
-### 59. Print the route that a packet takes to reach the host
+#### 59. Print the route that a packet takes to reach the host
 
 ```
 traceroute
 ```
 
-### 60. Connect a computer system to a remote server using the FTP protocol
+#### 60. Connect a computer system to a remote server using the FTP protocol
 
 ```
 ftp
 ```
 
-### 61. Find files and directories
+#### 61. Find files and directories
 
 ```
 find
 ```
 
-### 62. Find a file using the file name
+#### 62. Find a file using the file name
 
 ```
 locate
 ```
 
-### 63. Print out the status of a file
+#### 63. Print out the status of a file
 
 ```
 stat
 ```
 
-### 64. Synchronize a file or a directory remotely
+#### 64. Synchronize a file or a directory remotely
 
 ```
 rsync
+```
+
+#### 65. apply a diff file to an original
+
+```
+patch
+```
+
+#### 66. Display the differences in the files
+
+```
+diff
+```
+
+#### 67. Compare two sorted files line by line
+
+```
+comm
+```
+
+#### 68. Merge two different files based on a common field
+
+```
+join
+```
+
+#### 69. Merge files horizontally
+
+```
+paste
+```
+
+#### 70. Cut out sections of a specified file
+
+```
+cut
+```
+
+#### 71. Number lines in a file
+
+```
+nl
+```
+
+#### 72. Wrap each line in an input flle to fit a specified width
+
+```
+fold
+```
+
+#### 73. Format a large text flle
+
+```
+fmt
+```
+
+#### 74. Prepare files for printing
+
+```
+pr
+```
+
+#### 75. Print formatted output
+
+```
+printf
+```
+
+#### 76. Submit a file for printing
+
+```
+lpr
+```
+
+#### 77. Display status Information about the current printer
+
+```
+lpstat
+```
+
+#### 78. List the status of all available printers
+
+```
+lpq
+```
+
+#### 79. Cancel print jobs that have been queued for printing
+
+```
+lprm
 ```
