@@ -1,6 +1,8 @@
 ## Setup
 
-Please execute setup.sql script before running any below queries. 
+Please execute setup.sql script before running any below queries.
+
+[Setup](setup.sql)
 
 ### Ex1
 
