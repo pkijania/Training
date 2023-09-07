@@ -11,10 +11,10 @@ Podsumowanie praktyk:
 
 [Treść do zadania 1](Zadanie_1/README.md)
 
-### Zadanie 1
+### Zadanie 2
 
-[Treść do zadania 1](Zadanie_2/README.md)
+[Treść do zadania 2](Zadanie_2/README.md)
 
-### Zadanie 1
+### Zadanie 3
 
-[Treść do zadania 1](Zadanie_3/README.md)
+[Treść do zadania 3](Zadanie_3/README.md)
