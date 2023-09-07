@@ -1,3 +1,4 @@
+## This part of repository contains basic Git commands
 
 ### Branching and merging
 
