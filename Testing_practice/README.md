@@ -6,3 +6,15 @@ Podsumowanie praktyk:
 - Przeprowadzanie testów funkcjonalnych oraz niefunkcjonalnych w celu sprawdzenie działania aplikacji „Trivago” pod względem zgodności z założeniami technologii PWA,
 - Testowanie dokumentu „System informatyczny zarządzania dostępem na PGE Narodowy” pod względem poprawności merytorycznej oraz ogólnej jakości, a następnie tworzenie przykładowych testów działania: funkcji, wydajności i bezpieczeństwa systemu,
 - Tworzenie raportów defektów oraz pisanie ogólnych raportów z wykonanych testów.
+
+### Zadanie 1
+
+[Treść do zadania 1](Zadanie_1/README.md)
+
+### Zadanie 1
+
+[Treść do zadania 1](Zadanie_2/README.md)
+
+### Zadanie 1
+
+[Treść do zadania 1](Zadanie_3/README.md)

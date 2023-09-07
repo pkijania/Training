@@ -1,4 +1,4 @@
-## This file contains basic Git commands
+## This part of repository contains basic Git commands
 
 ### Branching and merging
 
