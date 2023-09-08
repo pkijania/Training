@@ -2,7 +2,7 @@
 
 -- Question:
 
--- Design query to present employee and supervisor in one row:
+-- Design query to present employee and his/her supervisor in one row
 
 -- Solution:
 

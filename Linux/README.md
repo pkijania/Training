@@ -2,48 +2,48 @@
 
 ### Archiving
 
-[Exercices](Archiving.md)
+[Exercises](Archiving.md)
 
 ### Commands
 
-[Exercices](Commands.md)
+[Exercises](Commands.md)
 
 ### Filesystem mounting
 
-[Exercices](Filesystem_mounting.md)
+[Exercises](Filesystem_mounting.md)
 
 ### Manipulating files and directories
 
-[Exercices](Manipulating_files_and_directories.md)
+[Exercises](Manipulating_files_and_directories.md)
 
 ### Network issues
 
-[Exercices](Network_issues.md)
+[Exercises](Network_issues.md)
 
 ### Permissions
 
-[Exercices](Permissions.md)
+[Exercises](Permissions.md)
 
 ### Printing
 
-[Exercices](Printing.md)
+[Exercises](Printing.md)
 
 ### Processes
 
-[Exercices](Processes.md)
+[Exercises](Processes.md)
 
 ### Redirection
 
-[Exercices](Redirection.md)
+[Exercises](Redirection.md)
 
 ### System review
 
-[Exercices](System_review.md)
+[Exercises](System_review.md)
 
 ### Text formatting
 
-[Exercices](Text_formatting.md)
+[Exercises](Text_formatting.md)
 
 ### Text processing
 
-[Exercices](Text_processing.md)
+[Exercises](Text_processing.md)

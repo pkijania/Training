@@ -21,11 +21,11 @@ salary int,
 type_of_contract varchar(50));
 
 INSERT INTO CONTRACT (employee_id, salary, type_of_contract) VALUES
-(1, 5000, 'contract of employment'),
+(1, 5000, 'contract_of_employment'),
 (2, 7500, 'business_to_business'),
-(3, 5000, 'contract of employment'),
+(3, 5000, 'contract_of_employment'),
 (4, 5000, 'business_to_business'),
-(5, 7500, 'business_to_business'),
-(6, 5000, 'contract of employment'),
+(5, 6000, 'contract_of_employment'),
+(6, 5000, 'contract_of_employment'),
 (7, 10000, 'business_to_business'),
-(8, 15000, 'contract of employment')
+(8, 15000, 'contract_of_employment')
