@@ -2,7 +2,7 @@
 
 -- Question:
 
--- Design query to present data (id, name, surname, age, salary, type_of_contract) in one table:
+-- Design query to present data (id, name, surname, age, salary, type_of_contract) in one table
 
 -- Solution:
 

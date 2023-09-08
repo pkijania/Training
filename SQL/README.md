@@ -27,3 +27,9 @@ Task: Design query to present employees with salary higher than employee with id
 Task: Design query to present data (id, name, surname, age, salary, type_of_contract) in one table
 
 [Solution](ex4.sql)
+
+### Ex5
+
+Task: Design query to show the number of b2b contracts and contracts of employment
+
+[Solution](ex5.sql)

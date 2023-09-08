@@ -5,19 +5,19 @@ Repository for learning purpose
 
 Git commands
 
-[Exercices](Git/README.md)
+[Exercises](Git/README.md)
 
 ### Linux
 
 Linux commands
 
-[Exercices](Linux/README.md)
+[Exercises](Linux/README.md)
 
 ### Postman
 
 Building simple API requests
 
-[Exercices](Postman/README.md)
+[Exercises](Postman/README.md)
 
 ### Python
 

@@ -2,7 +2,7 @@
 
 -- Question:
 
--- Design query to present employees with salary higher than employee with id 5:
+-- Design query to present employees with salary higher than employee with id 5
 
 -- Solution:
 
