@@ -1,4 +1,4 @@
-# 7. Sum of even and odd numbers
+# 7. Count the amount of even and odd numbers
 
 def even(list):
     n = len(list)

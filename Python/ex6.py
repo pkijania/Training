@@ -1,4 +1,4 @@
-# 6. Sum of values in array
+# 6. Print the sum of values in array
 
 def sum_of_values(list):
     n = len(list)

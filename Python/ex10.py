@@ -1,4 +1,4 @@
-# 10. Cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
+# 10. Create cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
 
 def cashmachine():
     x = 0

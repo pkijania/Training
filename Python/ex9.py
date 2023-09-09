@@ -1,4 +1,4 @@
-# 9. Palindrome
+# 9. Check if a word or a number is a palindrome
 
 def palindrome(list):
     n = len(list)

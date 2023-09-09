@@ -1,4 +1,4 @@
-# 3. Bubble sort
+# 3. Sort numbers in an array
 
 def sort(list):
     a = len(list)

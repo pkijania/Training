@@ -31,7 +31,7 @@ Small project for learning advanced SQLs
 
 [Exercises](SQL/README.md)
 
-### Testing practice
+### Testing practice (PL)
 
 Tasks from manual testing practice 
 

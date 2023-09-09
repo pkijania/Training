@@ -1,8 +1,6 @@
-# 2. Heads or tails
+# 2. Create a coin toss game - predict the outcome of a coin toss
 
 import random
-user=0
-computer=0
 y = str(input("heads or tails? "))
 x = random.choice(["heads","tails"])
 if(x==y):
