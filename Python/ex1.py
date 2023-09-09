@@ -1,4 +1,4 @@
-# 1. Menu with addition, subtraction and printing numbers functions
+# 1. Create menu with addition, subtraction and printing numbers functions
 
 def addition():
     sum = 0

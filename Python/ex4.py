@@ -1,4 +1,4 @@
-# 4. Fizzbuzz
+# 4. Task: Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 with a word "Buzz" and numbers divisible by 3 and 5 with a word "FizzBuzz"
 
 for i in range(1,101):
  if (i%3==0 and i%5==0):

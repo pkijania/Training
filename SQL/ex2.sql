@@ -2,7 +2,7 @@
 
 -- Question:
 
--- Design query to present employees aged between 29 and 55 years old ordered by column "name"
+-- Design query to present id, name and surname of employees aged between 29 and 55 years old ordered by column "name"
 
 -- Solution:
 

@@ -1,4 +1,4 @@
-# 8. Reverse of values in an array
+# 8. Reverse values in an array
 
 def reverse(list):
     n = len(list)
