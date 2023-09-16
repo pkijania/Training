@@ -14,16 +14,16 @@ def subtraction():
     y = int(input("Enter 2 digit: "))
     print("Your number is:", x - y)
 
-def printing(*z):
+def printing():
     print(1,2,3,4,5)
 
 x = 0
 while x !=4:
     print("\nMenu")
-    print("1 = addition of n digits")
-    print("2 = subtraction of 2 digits")
-    print("3 = printing 5 digits")
-    print("4 = Ending the program\n")
+    print("1 = Addition of n digits")
+    print("2 = Subtraction of 2 digits")
+    print("3 = Printing 5 digits")
+    print("4 = Exit the program\n")
     x = int(input("\nWhat would you like to do?: "))
     match x:
         case 1:
