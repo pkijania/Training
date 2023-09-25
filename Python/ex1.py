@@ -3,7 +3,7 @@
 def addition():
     sum = 0
     n = int(input("How many digits?: "))
-    print("Print",n, "digit(s): ")
+    print("Type",n, "digit(s): ")
     for i in range(n):
         c = int(input("Type a digit: "))
         sum = sum + c
