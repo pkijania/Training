@@ -2,12 +2,12 @@
 
 ### Main content
 
-[Exercises](Test_site.html)
+[Code](Test_site.html)
 
 ### Style
 
-[Exercises](style.css)
+[Code](style.css)
 
 ### Functions
 
-[Exercises](functions.js)
+[Code](functions.js)
