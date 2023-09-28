@@ -1,4 +1,4 @@
-## This part of repository contains a simple page
+## This part of repository contains a simple page written in 3 files
 
 ### Main content
 
