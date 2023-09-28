@@ -1,0 +1,82 @@
+/* Style of main page content */
+.main {
+	margin-top: 54px;
+	margin-left: 160px;
+	padding: 0px 10px;
+}
+
+/* Style of "normal" class content */
+.normal {
+	color: #D1D5DB;
+}
+
+/* Style of "other" class content */
+.other {
+	color: black;
+	background-color: #33AFF8
+}
+
+/* Style of body content */
+body {
+	background-color: #0F172B;
+}
+
+/* Style of a table */
+table {
+	width: 50%;
+}
+
+/* The topbar menu */
+.navbar {
+	overflow: hidden;
+	background-color: #0A0F1B;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	margin-left: -9px;
+	border: 1px solid white;
+}
+
+/* The navigation menu links */
+.navbar a {
+	float: left;
+ 	display: block;
+ 	color: #D1D5DB;
+ 	text-align: center;
+ 	padding: 14px 25px;
+	text-decoration: none;
+}
+
+/* Background color change on mouse-over */
+.navbar a:hover {
+	background-color: #D1D5DB;
+	color: black;
+}
+
+/* The sidebar menu */
+.sidenav {
+	height: 100%;
+	width: 150px;
+	margin-left: -9px;
+	position: fixed;
+	top: 47px;
+	background-color: #0A0F1B;
+	overflow-x: hidden;
+	padding-top: 0px;
+	border: 1px solid white;
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 10px 6px 10px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #D1D5DB;
+	display: block;
+}
+
+/* Background color change on mouse-over */
+.sidenav a:hover {
+	background-color: #D1D5DB;
+	color: black;
+}
