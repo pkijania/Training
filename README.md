@@ -23,7 +23,7 @@ Building simple API requests
 
 Simple page in HTML
 
-[Code](HTML, CSS, Javascript/README.md)
+[Code](HTML_CSS_Javascript/README.md)
 
 ### Python
 
