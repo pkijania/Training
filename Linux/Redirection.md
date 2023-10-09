@@ -1,4 +1,4 @@
-#### 1. Searche a file for a particular pattern of characters and display all lines that contain that pattern
+#### 1. Search a file for a particular pattern of characters and display all lines that contain that pattern
 
 ```
 grep
