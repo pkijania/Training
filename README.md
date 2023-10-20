@@ -31,7 +31,13 @@ Various small excercises
 
 [Exercises](Python/README.md)
 
-### SQL 
+### Selenium
+
+Swag Labs page tests
+
+[Exercises](Selenium/README.md)
+
+### SQL
 
 Small project for learning advanced SQLs
 
