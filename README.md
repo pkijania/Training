@@ -33,7 +33,7 @@ Various small excercises
 
 ### Selenium
 
-Swag Labs page tests
+Various page tests
 
 [Exercises](Selenium/README.md)
 
