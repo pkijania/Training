@@ -1,16 +1,16 @@
 # 7. Count the amount of even and odd numbers
 
 def even(list):
-    n = len(list)
-    p = 0
-    np = 0
-    for i in range(0,n):
+    length = len(list)
+    even = 0
+    odd = 0
+    for i in range(0, length):
         if list[i] % 2 == 0:
-            p += 1
+            even += 1
         if list[i] % 2 != 0:
-            np += 1
-    print("number of even digits", p)
-    print("number of odd digits", np)
-    return (p,np)
-a = even([1,2,3,4,5,67])
-print(a)
+            odd += 1
+    print("number of even digits", even)
+    print("number of odd digits", odd)
+    return (even, odd)
+out = even([1,2,3,4,5,67])
+print(out)

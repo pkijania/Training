@@ -1,18 +1,18 @@
 # 10. Create cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
 
 def cashmachine():
-    x = 0
+    choice = 0
     balance = int(input("Enter account balance between 0 and 500 zl : "))
-    while(x != 4):
+    while(choice != 4):
         print("\nMenu")
         print("1 = Show account balance:")
         print("2 = Deposit money:")
         print("3 = Pay out money:")
         print("4 = Exit:")
-        x = int(input("\nChoose action:"))
-        if(x == 1):
+        choice = int(input("\nChoose action:"))
+        if(choice == 1):
             print("\nAccount balance:", balance)
-        elif(x == 2):
+        elif(choice == 2):
             if(balance == 500):
                 print("Cant deposit more money. Account balance cannot exceed 500 zł")
             else:
@@ -25,7 +25,7 @@ def cashmachine():
                     balance = balance + action
                 else:
                     print("Cashmachine depisits only bank notes of 50,20 and 10 zł value. Enter different value.")
-        elif(x == 3):
+        elif(choice == 3):
             if(balance < 10):
                 print("Lack of funds on an account")
             else:
@@ -38,7 +38,7 @@ def cashmachine():
                     balance = balance - action
                 else:
                     print("Cashmachine pays out only bank notes of 50,20 and 10 zł value. Enter different value.")
-        elif(x == 4):
+        elif(choice == 4):
             print("Logged out")
             break
         else:
