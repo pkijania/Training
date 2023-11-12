@@ -7,5 +7,5 @@
 -- Solution:
 
 SELECT COUNT(employee_id) AS salary
-FROM CONTRACT
-WHERE salary > (SELECT salary FROM CONTRACT WHERE employee_id = 5)
+FROM contract
+WHERE salary > (SELECT salary FROM contract WHERE employee_id = 5)

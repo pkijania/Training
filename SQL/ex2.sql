@@ -7,6 +7,6 @@
 -- Solution:
 
 SELECT employee_id, name, surname
-FROM EMPLOYEE
+FROM employee
 WHERE age BETWEEN 29 AND 55
 ORDER BY name

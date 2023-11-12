@@ -41,3 +41,21 @@ Task: Design query to show the number of b2b contracts and contracts of employme
 Task: Design query to present name, surname and age of employees with surname longer than 5 letters ordered by their age (descending)
 
 [Solution](ex6.sql)
+
+### Ex7
+
+Task: Design query to present all data from all tables
+
+[Solution](ex7.sql)
+
+### Ex8
+
+Task: Design materialized view which will contain information about currently employed employees
+
+[Solution](ex8.sql)
+
+### Ex9
+
+Task: Design view which will contain information about number of employed personel in each year
+
+[Solution](ex9.sql)

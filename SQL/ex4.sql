@@ -6,6 +6,6 @@
 
 -- Solution:
 
-SELECT EMPLOYEE.employee_id, name, surname, age, salary, type_of_contract
-FROM EMPLOYEE
-JOIN CONTRACT ON (EMPLOYEE.employee_id = CONTRACT.employee_id)
+SELECT employee.employee_id, name, surname, age, salary, type_of_contract
+FROM employee
+JOIN CONTRACT ON (employee.employee_id = contract.employee_id)
