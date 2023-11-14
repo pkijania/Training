@@ -19,11 +19,11 @@ Building simple API requests
 
 [Exercises](Postman/README.md)
 
-### HTML, CSS, Javascript
+### HTML and CSS
 
 Simple page in HTML
 
-[Code](HTML_CSS_Javascript/README.md)
+[Code](HTML_and_CSS/README.md)
 
 ### Python
 
