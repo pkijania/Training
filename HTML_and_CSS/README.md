@@ -1,13 +1,37 @@
-## This part of repository contains a simple page written in 3 files
+## This part of repository contains simple pages written in HTML, CSS and JavaScript
 
-### Main content
+## First page
 
-[Code](Test_site.html)
+### HTML code
 
-### Style
+[Code](Page_1/site_1.html)
 
-[Code](style.css)
+### CSS code
 
-### Functions
+[Code](Page_1/style.css)
 
-[Code](functions.js)
+### JavaScript code
+
+[Code](Page_1/functions.js)
+
+## Second page
+
+### HTML code 1/4
+
+[Code](Page_2/site_2_1.html)
+
+### HTML code 2/4
+
+[Code](Page_2/site_2_2.html)
+
+### HTML code 3/4
+
+[Code](Page_2/site_2_3.html)
+
+### HTML code 4/4
+
+[Code](Page_2/site_2_4.html)
+
+### CSS code
+
+[Code](Page_2/style_2.css)

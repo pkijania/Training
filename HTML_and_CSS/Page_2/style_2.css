@@ -1,0 +1,131 @@
+body {
+	font-family: "Courier New";
+	font-size: 110%;
+	background-color: #E2E699;
+	color: black;
+}
+
+.image_one {
+	margin: 20px auto;
+}
+
+.image_two {
+	margin: 20px auto;
+}
+
+.image_three {
+	margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 0.10em;
+}
+
+ul {
+	margin: 0px auto 0px auto;
+	padding: 15px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+
+li {
+	display: inline;
+	margin: 0px 5px;
+}
+
+a {
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	font-size: 120%;
+	color: black;
+}
+
+ul a:hover {
+	color: white;
+}
+
+p {
+	letter-spacing: 0em;
+	float: left;
+	font-size: 100%;
+	text-decoration: none;
+	width: 600px;
+	margin: 10px;
+	text-align: justify;
+}
+
+.second {
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.lo_first{
+	width: 50%;
+	padding: 25px;
+	letter-spacing: 0em;
+	float: left;
+	font-size: 100%;
+	text-decoration: none;
+	margin: -20px 50px auto 20px;
+	text-align: justify;
+}
+
+.lo_second {
+	width: 50%;
+	padding: 25px;
+	letter-spacing: 0em;
+	float: left;
+	font-size: 100%;
+	text-decoration: none;
+	margin: -20px 50px auto 20px;
+	text-align: justify;
+}
+
+.lf_first {
+	width: 95%;
+	padding: 10px;
+	letter-spacing: 0em;
+	float: none;
+	font-size: 100%;
+	text-decoration: none;
+	margin: auto auto 20px auto;
+	text-align: justify;
+}
+
+.lf_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lf_second {
+	width: 95%;
+	padding: 10px;
+	letter-spacing: 0em;
+	float: none;
+	font-size: 100%;
+	text-decoration: none;
+	margin: 20px auto auto auto;
+	text-align: justify;
+}
+
+.lt_first {
+	width: 90%;
+	padding: 10px;
+	letter-spacing: 0em;
+	float: none;
+	font-size: 100%;
+	text-decoration: none;
+	margin: auto auto 20px auto;
+	text-align: justify;
+}
+
+.lt_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
