@@ -2,8 +2,8 @@
 
 def palindrome(list):
     length = len(list)
-    for i in range(0,int(length/2)):
-        if list[i] != list[length-i-1]:
+    for i in range(0, int(length/2)):
+        if list[i] != list[length - i - 1]:
             return False
     return True
 

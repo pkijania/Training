@@ -5,7 +5,7 @@ const prompt = require ("prompt-sync")();
 function reverse(list){
     let new_list = [];
     for (let i of list){
-        new_list.push(list.length -1 - i);
+        new_list.push(list.length - 1 -  i);
     }
     return new_list;
 }

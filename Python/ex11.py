@@ -1,3 +1,5 @@
+# 11. Class containing some of previous exercises and two simple methods for creating tables
+
 class Lists_exercises:
     
     def __init__(self, list):

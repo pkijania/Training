@@ -53,3 +53,21 @@ Task: Count the amount of even and odd numbers
 Task: Reverse values in an array
 
 [Solution](ex8.js)
+
+### Ex9
+
+Task: Check if a word or a number is a palindrome
+
+[Solution](ex9.js)
+
+### Ex10
+
+Task: Create cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
+
+[Solution](ex10.js)
+
+### Ex11
+
+Task: Class containing some of previous exercises and two simple methods for creating tables
+
+[Solution](ex11.js)
