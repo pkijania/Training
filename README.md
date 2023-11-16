@@ -31,6 +31,12 @@ Various small excercises
 
 [Exercises](Python/README.md)
 
+### Javascript
+
+Various small excercises
+
+[Exercises](JavaScript/README.md)
+
 ### Selenium
 
 Various page tests
