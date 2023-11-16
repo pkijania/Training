@@ -35,3 +35,21 @@ Task: Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 
 Task: Find min and max value
 
 [Solution](ex5.js)
+
+### Ex6
+
+Task: Print the sum of values in array
+
+[Solution](ex6.js)
+
+### Ex7
+
+Task: Count the amount of even and odd numbers
+
+[Solution](ex7.js)
+
+### Ex8
+
+Task: Reverse values in an array
+
+[Solution](ex8.js)

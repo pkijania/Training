@@ -5,12 +5,12 @@ const prompt = require ("prompt-sync")();
 let list = [80, 21, 2, 0, 100, 5, 8, 25, 64];
 let max = list[0];
 let min = list[0];
-for (i = 0; i <= list.length; i++){
-    if (list[i] < min){
-        min = list[i];
+for (let i of list){
+    if (i < min){
+        min = i;
     }
-    if (list[i] > max){
-        max = list[i];
+    if (i > max){
+        max = i;
     }
 }
 console.log(min, "min")
