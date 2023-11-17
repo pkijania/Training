@@ -6,8 +6,8 @@ function addition(){
     let sum = 0;
     let number_of_digits = parseInt(prompt("How many digits?: "), 10);
     console.log("Type", number_of_digits, "digit(s): ")
-    for (i = 1; i <= number_of_digits; i++) {
-        var digit = parseInt(prompt("Type a digit: "), 10);
+    for (let i = 1; i <= number_of_digits; i++) {
+        let digit = parseInt(prompt("Type a digit: "), 10);
         sum = sum + digit;
     }
     console.log("Sum is:", sum)
@@ -20,7 +20,7 @@ function subtraction(){
 }
 
 function printing(){
-    console.log(1,2,3,4,5)
+    console.log(1, 2, 3, 4, 5)
 }
 
 let choice = 0;

@@ -6,19 +6,19 @@ class Lists_exercises:
         self.list = list
 
     # Min and max in a list
-    def MinMax(self, list):
-        min = 0
-        max = 0
+    def minmax(self, list):
+        min = list[0]
+        max = list[0]
         length = len(list)
-        for i in range(0, length):
-            if list[i] > max or max == 0:
+        for i in range(length):
+            if list[i] > max:
                 max = list[i]
-            if list[i] < min or min == 0:
+            if list[i] < min:
                 min = list[i]
         return "Min is " + str(min), "max is " + str(max)
     
     # Sorting elements in a list
-    def Sort(self, list):
+    def sort(self, list):
         length = len(list)
         for j in range(0, length):
             for i in range(0, length - 1):
@@ -27,26 +27,26 @@ class Lists_exercises:
         return "Sorted list: " + str(list)
 
     # Sum of 2 elements
-    def Sum(self):
+    def sum(self):
         first_number = int(input("Type a number: "))
         second_number = int(input("Type a 2 number: "))
         return first_number + second_number
 
     # Sum of 2 elements
-    def Sum_1(self, first, second):
+    def sum_1(self, first, second):
         return first + second
 
     # Addition of n number of elements
-    def Sum_list(self):
+    def sum_list(self):
         length = int(input("how many digits? "))
         sum = int(0)
         for i in range(0, length):
-            x = int(input("Type a digit: "))
-            sum = sum + x
+            digit = int(input("Type a digit: "))
+            sum = sum + digit
         return sum
 
     # Check if a word or a number is a palindrome
-    def Palindrome(self, list):
+    def palindrome(self, list):
         length = len(list)
         for i in range(0,int(length/2)):
             if list[i] != list[length-i-1]:
@@ -57,7 +57,7 @@ class Lists_exercises:
 class Table_exercise(Lists_exercises):
 
     # Display reversed list
-    def Reverse(self, list):
+    def reverse(self, list):
         length = len(list)
         new_list = []
         for i in range(1, length+1):
@@ -65,7 +65,7 @@ class Table_exercise(Lists_exercises):
         return "Old list is " + str(list), "new list is " + str(new_list)
 
     # Create and display a table of 4 columns and 3 rows and count the sum of all it's elements
-    def TableSum(self):
+    def tablesum(self):
         row, column = 3, 4
         list = []
         for i in range(row):
@@ -85,19 +85,19 @@ class Table_exercise(Lists_exercises):
         print("Sum of elements in a table is: " + str(sum))
 
 var = Lists_exercises([1,2,3,4])
-print(var.MinMax([1,2,3,4]))
+print(var.minmax([1,2,3,4]))
 
 print()
 
 var_2 = Lists_exercises([1,3,2,5,4])
-print(var_2.Sort([1,3,2,5,4]))
+print(var_2.sort([1,3,2,5,4]))
 
 print()
 
 var3 = Table_exercise([1,2,3,4])
-print(var3.Reverse([1,2,3,4]))
+print(var3.reverse([1,2,3,4]))
 
 print()
 
 var_4 = Table_exercise([1,2,3,4])
-print(var_4.TableSum())
+print(var_4.tablesum())

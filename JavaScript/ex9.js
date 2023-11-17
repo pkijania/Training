@@ -1,9 +1,7 @@
 // 9. Check if a word or a number is a palindrome
 
-const prompt = require ("prompt-sync")();
-
 function palindrome(list){
-    for (i = 0; i < list.length/2; i++){
+    for (let i = 0; i < list.length/2; i++){
         if (list[i] != list[list.length - 1 - i]){
             return false;
         }

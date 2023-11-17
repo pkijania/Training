@@ -1,7 +1,5 @@
 // 6. Print the sum of values in array
 
-const prompt = require ("prompt-sync")();
-
 function sum_of_values(list){
     let sum = 0;
     for (let i of list){

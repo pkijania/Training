@@ -1,7 +1,5 @@
 // 5. Find min and max value
 
-const prompt = require ("prompt-sync")();
-
 let list = [80, 21, 2, 0, 100, 5, 8, 25, 64];
 let max = list[0];
 let min = list[0];

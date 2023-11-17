@@ -1,7 +1,5 @@
 // 7. Count the amount of even and odd numbers
 
-const prompt = require ("prompt-sync")();
-
 function even(list){
     let even_number = 0;
     let odd_number = 0;
