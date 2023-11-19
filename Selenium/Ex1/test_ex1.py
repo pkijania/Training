@@ -9,71 +9,77 @@ class TestPage:
         self.driver.maximize_window()
 
     def run(self):
-        login = LoggingIn(self.driver)
-        login.logging_in("standard_user", "secret_sauce")
-        add = AddingProducts(self.driver)
-        add.adding_products()
-        validate = ValidatingPurchase(self.driver)
-        validate.validating_purchase("John", "Smith", "54-254")
-        logout = LoggingOut(self.driver)
-        logout.logging_out()
+        login = Login(self.driver)
+        login.login("standard_user", "secret_sauce")
+        add = ProductsBasket(self.driver)
+        add.add_products()
+        validate = PurchaseValidator(self.driver)
+        validate.validate_purchase("John", "Smith", "54-254")
+        logout = Logout(self.driver)
+        logout.logout()
 
-class Locators:
-        user_name = "user-name"
-        password = "password"
-        login_button = "login-button"
-        add_to_cart_backpack = "add-to-cart-sauce-labs-backpack"
-        add_to_cart_bike_light = "add-to-cart-sauce-labs-bike-light"
-        button = "//span[text()='2']"
-        checkout = "checkout"
-        first_name = "firstName"
-        last_name = "lastName"
-        postal_code = "postalCode"
-        continue_button = "continue"
-        finish = "finish"
-        back_to_products = "back-to-products"
-        menu = "react-burger-menu-btn"
-        logout = "Logout"
+class LoginLocators:
+    user_name = (By.ID, "user-name")
+    password = (By.ID, "password")
+    login_button = (By.ID, "login-button")
 
-class LoggingIn:
+class ProductsBasketLocators:
+    add_to_cart_backpack = (By.ID, "add-to-cart-sauce-labs-backpack")
+    add_to_cart_bike_light = (By.ID, "add-to-cart-sauce-labs-bike-light")
+    button = (By.XPATH, "//span[text()='2']")
+    checkout = (By.NAME, "checkout")
+
+class PurchaseValidatorLocators:
+    first_name = (By.NAME, "firstName")
+    last_name = (By.NAME, "lastName")
+    postal_code = (By.NAME, "postalCode")
+    continue_button = (By.NAME, "continue")
+    finish = (By.NAME, "finish")
+    back_to_products = (By.NAME, "back-to-products")
+
+class LogoutLocators:
+    menu = (By.ID, "react-burger-menu-btn")
+    logout = (By.LINK_TEXT, "Logout")
+
+class Login:
     def __init__(self, driver):
         self.driver = driver
 
-    def logging_in(self, standard_user, secret_sauce):
-        self.driver.find_element(By.ID, Locators.user_name).send_keys(standard_user)
-        self.driver.find_element(By.ID, Locators.password).send_keys(secret_sauce)
-        self.driver.find_element(By.ID, Locators.login_button).click()
+    def login(self, standard_user, secret_sauce):
+        self.driver.find_element(*LoginLocators.user_name).send_keys(standard_user)
+        self.driver.find_element(*LoginLocators.password).send_keys(secret_sauce)
+        self.driver.find_element(*LoginLocators.login_button).click()
 
-class AddingProducts:
+class ProductsBasket:
     def __init__(self, driver):
         self.driver = driver
 
-    def adding_products(self):
-        self.driver.find_element(By.ID, Locators.add_to_cart_backpack).click()
-        self.driver.find_element(By.ID, Locators.add_to_cart_bike_light).click()
-        self.driver.find_element(By.XPATH, Locators.button).click()
-        self.driver.find_element(By.NAME, Locators.checkout).click()
+    def add_products(self):
+        self.driver.find_element(*ProductsBasketLocators.add_to_cart_backpack).click()
+        self.driver.find_element(*ProductsBasketLocators.add_to_cart_bike_light).click()
+        self.driver.find_element(*ProductsBasketLocators.button).click()
+        self.driver.find_element(*ProductsBasketLocators.checkout).click()
         
-class ValidatingPurchase:
+class PurchaseValidator:
     def __init__(self, driver):
         self.driver = driver
 
-    def validating_purchase(self, name, surname, pcode):
-        self.driver.find_element(By.NAME, Locators.first_name).send_keys(name)
-        self.driver.find_element(By.NAME, Locators.last_name).send_keys(surname)
-        self.driver.find_element(By.NAME, Locators.postal_code).send_keys(pcode)
-        self.driver.find_element(By.NAME, Locators.continue_button).click()
-        self.driver.find_element(By.NAME, Locators.finish).click()
-        self.driver.find_element(By.NAME, Locators.back_to_products).click()
+    def validate_purchase(self, name, surname, pcode):
+        self.driver.find_element(*PurchaseValidatorLocators.first_name).send_keys(name)
+        self.driver.find_element(*PurchaseValidatorLocators.last_name).send_keys(surname)
+        self.driver.find_element(*PurchaseValidatorLocators.postal_code).send_keys(pcode)
+        self.driver.find_element(*PurchaseValidatorLocators.continue_button).click()
+        self.driver.find_element(*PurchaseValidatorLocators.finish).click()
+        self.driver.find_element(*PurchaseValidatorLocators.back_to_products).click()
 
-class LoggingOut:
+class Logout:
     def __init__(self, driver):
         self.driver = driver
 
-    def logging_out(self):      
-        self.driver.find_element(By.ID, Locators.menu).click()
+    def logout(self):      
+        self.driver.find_element(*LogoutLocators.menu).click()
         self.driver.implicitly_wait(3)
-        self.driver.find_element(By.LINK_TEXT, Locators.logout).click()
+        self.driver.find_element(*LogoutLocators.logout).click()
 
 test = TestPage()
 test.run()
