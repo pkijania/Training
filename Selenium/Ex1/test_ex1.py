@@ -3,12 +3,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 class TestPage:
-    def __init__(self):
+    def setup_class(self):
         self.driver = webdriver.Edge("D:\Programy\Selenium\Webdriver\msedgedriver.exe")
         self.driver.get("https://www.saucedemo.com/")
         self.driver.maximize_window()
 
-    def run(self):
+    def test_run(self):
         login = Login(self.driver)
         login.login("standard_user", "secret_sauce")
         add = ProductsBasket(self.driver)
@@ -80,6 +80,3 @@ class Logout:
         self.driver.find_element(*LogoutLocators.menu).click()
         self.driver.implicitly_wait(3)
         self.driver.find_element(*LogoutLocators.logout).click()
-
-test = TestPage()
-test.run()
