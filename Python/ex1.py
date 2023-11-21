@@ -4,10 +4,10 @@ class AdditionSubtraction:
     def addition():
         sum = 0
         number_of_digits = int(input("How many digits?: "))
-        print("Type", number_of_digits, "digit(s): ")
         if(number_of_digits < 0):
             print("\nNumber of digits must be at least 0")
         else:
+            print("Type", number_of_digits, "digit(s): ")
             for i in range(number_of_digits):
                 digit = int(input("Type a digit: "))
                 sum = sum + digit
@@ -20,12 +20,12 @@ class AdditionSubtraction:
             case _ if number_of_digits < 0:
                 print("\nNumber of digits must be at least 0")
             case _ if number_of_digits == 0:
-                    print(number_of_digits)
+                    print("Subtraction is: ", number_of_digits)
             case _ if number_of_digits == 1:
                     subtraction = int(input("Type a digit: "))
                     print("\nSubtraction is: ", subtraction)
             case _ if number_of_digits > 1:
-                print("Type", number_of_digits, "digits(s): ")
+                print("Type", number_of_digits, "digit(s): ")
                 for i in range (number_of_digits):
                     digit = int(input("Type a digit: "))
                     list.append(digit)
@@ -33,7 +33,7 @@ class AdditionSubtraction:
                 sum_of_digits = 0
                 for i in range (1, len(list)):
                     sum_of_digits += list[i]
-                    subtraction = first_digit - sum_of_digits
+                subtraction = first_digit - sum_of_digits
                 print("\nSubtraction is: ", subtraction)
 
 class Menu:
