@@ -33,8 +33,8 @@ class AdditionSubtraction:
                 sum_of_digits = 0
                 for i in range (1, len(list)):
                     sum_of_digits += list[i]
-                subtraction = first_digit - sum_of_digits
-                print("\nSubtraction is: ", subtraction)
+                outcome = first_digit - sum_of_digits
+                print("\nSubtraction is: ", outcome)
 
 class Menu:
     choice = 0
