@@ -1,10 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+import os
 
 class TestPage:
     def setup_class(self):
-        self.driver = webdriver.Edge("D:\Programy\Selenium\Webdriver\msedgedriver.exe")
+        web_driver_path = os.getenv("PATH_TO_DRIVE")
+        self.driver = webdriver.Edge(web_driver_path)
         self.driver.get("https://www.saucedemo.com/")
         self.driver.maximize_window()
 
