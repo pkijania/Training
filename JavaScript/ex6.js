@@ -1,4 +1,4 @@
-// 6. Print the sum of values in array
+// 6. Print the sum of values in an array
 
 function sum_of_values(list){
     let sum = 0;

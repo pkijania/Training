@@ -1,6 +1,6 @@
 # 7. Count the amount of even and odd numbers
 
-def even(list):
+def even_odd(list):
     length = len(list)
     even = 0
     odd = 0
@@ -12,5 +12,6 @@ def even(list):
     print("number of even digits", even)
     print("number of odd digits", odd)
     return (even, odd)
-out = even([1,2,3,4,5,67])
+
+out = even_odd([1,2,3,4,5,67])
 print(out)

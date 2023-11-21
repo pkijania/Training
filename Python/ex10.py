@@ -9,17 +9,14 @@ def cashmachine():
                 print ("Wrong amount of account balance")
             else:
                 while (choice != 4):
-
                     print("\nMenu")
                     print("1 = Show account balance:")
                     print("2 = Deposit money:")
                     print("3 = Pay out money:")
                     print("4 = Exit:")
                     choice = int(input("\nChoose action:"))
-
                     if (choice == 1):
                         print("\nAccount balance:", balance)
-
                     elif (choice == 2):
                         if (balance >= 500):
                             print("Cant deposit more money. Account balance cannot exceed 500 zł")
@@ -36,7 +33,6 @@ def cashmachine():
                                     balance = balance + action
                                 else:
                                     print("Cashmachine deposits only bank notes of 50, 20 and 10 zł value. Enter a different value.")
-
                     elif (choice == 3):
                         if (balance <= 10):
                             print("Cant pay out more money. Account balance cannot be lower than 10 zł")
@@ -54,7 +50,6 @@ def cashmachine():
                                 else:
                                     print("Cashmachine pays out only bank notes of 50, 20 and 10 zł value. Enter a different value.")
                     elif (choice == 4):
-
                         print("Logged out")
                         break
                     else:
