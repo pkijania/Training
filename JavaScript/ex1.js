@@ -47,7 +47,7 @@ let choice = 0;
 while (choice != 3){
     console.log("\nMenu")
     console.log("1 = Addition of n digits")
-    console.log("2 = Subtraction of 2 digits")
+    console.log("2 = Subtraction of n digits")
     console.log("3 = Exit the program")
     choice = parseInt(prompt("\nWhat would you like to do?: "), 10)
     switch (choice){
