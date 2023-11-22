@@ -119,14 +119,14 @@ class Table_exercise extends Lists_exercises{
     }
 }
 
-let out = new Table_exercise();
-console.log(out.tablesum())
+let out_1 = new Table_exercise();
+console.log(out_1.tablesum())
 
-let out = new Table_exercise([1, 2, 3, 4, 5]);
-console.log(out.reverse([1, 2, 3, 4, 5]))
+let out_2 = new Table_exercise([1, 2, 3, 4, 5]);
+console.log(out_2.reverse([1, 2, 3, 4, 5]))
 
-let out = new Lists_exercises([1, 2, 3, 4, 0, 6]);
-console.log(out.minmax([1, 2, 3, 4, 0, 6]))
+let out_3 = new Lists_exercises([1, 2, 3, 4, 0, 6]);
+console.log(out_3.minmax([1, 2, 3, 4, 0, 6]))
 
-let out_2 = new Lists_exercises([1, 23, 13, 4, 0, 6]);
-console.log(out_2.sort([1, 23, 13, 4, 0, 6]))
+let out_4 = new Lists_exercises([1, 23, 13, 4, 0, 6]);
+console.log(out_4.sort([1, 23, 13, 4, 0, 6]))
