@@ -2,7 +2,7 @@
 
 ### Ex1
 
-Task: Create menu with addition, subtraction and printing numbers functions
+Task: Create menu with addition, subtraction, multiply and division
 
 [Solution](ex1.py)
 

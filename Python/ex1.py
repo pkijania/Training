@@ -1,4 +1,4 @@
-# 1. Create menu with addition and subtraction
+# 1. Create menu with addition, subtraction, multiply and division
 
 class Calculations:
     def addition():
