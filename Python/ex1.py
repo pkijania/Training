@@ -1,20 +1,19 @@
 # 1. Create menu with addition and subtraction
 
-class AdditionSubtraction:
+class Calculations:
     def addition():
-        sum = 0
         number_of_digits = int(input("How many digits?: "))
         if(number_of_digits < 0):
             print("\nNumber of digits must be at least 0")
         else:
             print("Type", number_of_digits, "digit(s): ")
+            sum = 0
             for i in range(number_of_digits):
-                digit = int(input("Type a digit: "))
+                digit = float(input("Type a digit: "))
                 sum = sum + digit
             print("\nSum is: ", sum)
 
     def subtraction():
-        list = []
         number_of_digits = int(input("How many digits?: "))
         match number_of_digits:
             case _ if number_of_digits < 0:
@@ -22,12 +21,13 @@ class AdditionSubtraction:
             case _ if number_of_digits == 0:
                     print("Subtraction is: ", number_of_digits)
             case _ if number_of_digits == 1:
-                    subtraction = int(input("Type a digit: "))
+                    subtraction = float(input("Type a digit: "))
                     print("\nSubtraction is: ", subtraction)
             case _ if number_of_digits > 1:
                 print("Type", number_of_digits, "digit(s): ")
+                list = []
                 for i in range (number_of_digits):
-                    digit = int(input("Type a digit: "))
+                    digit = float(input("Type a digit: "))
                     list.append(digit)
                 first_digit = list[0]
                 sum_of_digits = 0
@@ -36,19 +36,67 @@ class AdditionSubtraction:
                 outcome = first_digit - sum_of_digits
                 print("\nSubtraction is: ", outcome)
 
+    def multiply():
+        number_of_digits = int(input("How many digits?: "))
+        match number_of_digits:
+            case _ if number_of_digits < 0:
+                print("\nNumber of digits must be at least 0")
+            case _ if number_of_digits == 0:
+                print("Multiply equals: ", number_of_digits)
+            case _ if number_of_digits == 1:
+                multiply = float(input("Type a digit: "))
+                print("\nMultiply equals: ", multiply)
+            case _ if number_of_digits > 1:
+                print("Type", number_of_digits, "digit(s): ")
+                multiply = 1
+                for i in range(number_of_digits):
+                    digit = float(input("Type a digit: "))
+                    multiply = multiply * digit
+                print("\nMultiply equals: ", multiply)
+    
+    def division():
+        number_of_digits = int(input("How many digits?: "))
+        match number_of_digits:
+            case _ if number_of_digits < 0:
+                print("\nNumber of digits must be at least 0")
+            case _ if number_of_digits == 0:
+                print("Division equals: ", number_of_digits)
+            case _ if number_of_digits == 1:
+                division = float(input("Type a digit: "))
+                print("\nDivision equals: ", division)
+            case _ if number_of_digits > 1:
+                print("Type", number_of_digits, "digit(s): ")
+                list = []
+                for i in range(number_of_digits):
+                    digit = float(input("Type a digit: "))
+                    list.append(digit)
+                outcome = 0
+                for i in range(len(list) - 1):
+                    division = list[i] / list[i + 1]
+                    outcome += division
+                print("\nDivision equals: ", division)
+
 class Menu:
     choice = 0
-    while choice != 3:
+    while choice != 5:
         print("\nMenu:")
         print("1 = Addition of n digits")
         print("2 = Subtraction of n digits")
-        print("3 = Exit the program\n")
+        print("3 = Multiply of n digits")
+        print("4 = Division of n digits")
+        print("5 = Exit the program\n")
         choice = int(input("\nWhat would you like to do?: "))
         match choice:
             case 1:
-                AdditionSubtraction.addition()
+                Calculations.addition()
             case 2:
-                AdditionSubtraction.subtraction()
+                Calculations.subtraction()
             case 3:
+                Calculations.multiply()
+            case 4:
+                Calculations.division()
+            case 5:
                 break
+            case _ if choice < 1 or choice > 5:
+                print("Wrong action, choose again")
     print("End")
