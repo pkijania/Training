@@ -3,8 +3,10 @@
 class Calculations:
     def addition():
         number_of_digits = int(input("How many digits?: "))
-        if(number_of_digits < 0):
+        if number_of_digits < 0:
             print("\nNumber of digits must be at least 0")
+        elif number_of_digits == 0:
+            print("\nSum is: ", number_of_digits)
         else:
             print("Type", number_of_digits, "digit(s): ")
             sum = 0
@@ -70,10 +72,9 @@ class Calculations:
                 for i in range(number_of_digits):
                     digit = float(input("Type a digit: "))
                     list.append(digit)
-                outcome = 0
+                division = None
                 for i in range(len(list) - 1):
-                    division = list[i] / list[i + 1]
-                    outcome += division
+                    division = (division + list[i]) / list[i + 1]
                 print("\nDivision equals: ", division)
 
 class Menu:
