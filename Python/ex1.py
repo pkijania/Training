@@ -72,9 +72,12 @@ class Calculations:
                 for i in range(number_of_digits):
                     digit = float(input("Type a digit: "))
                     list.append(digit)
-                division = 0
-                for i in range(len(list) - 1):
-                    division = (division + list[i]) / list[i + 1]
+                division = None
+                for i in range(len(list)):
+                    if division is None:
+                        division = list[i]
+                    else:
+                        division = division / list[i]
                 print("\nDivision equals: ", division)
 
 class Menu:
