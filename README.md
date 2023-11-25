@@ -54,3 +54,9 @@ Small project for learning advanced SQLs
 Tasks from manual testing practice 
 
 [Exercises](Testing_practice/README.md)
+
+### Workflows
+
+Tests for python exercises
+
+[Exercises](.github/workflows/test.yml)
