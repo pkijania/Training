@@ -11,4 +11,4 @@ def sort(list):
         if end == False: break
     return list
 
-print(sort([1,5,2,6,3,4,12]))
+print(sort([1,5,2,6,3,4,129]))
