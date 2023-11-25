@@ -82,29 +82,35 @@ function multiply(){
 
 function division(){
     let number_of_digits = parseInt(prompt("How many digits?: "), 10);
-    if (number_of_digits < 0){
-        console.log("\nNumber of digits must be at least 0")
-    }
-    else if (number_of_digits === 0){
-        console.log("\nMultiply equals:", number_of_digits)
-    }
-    else if (number_of_digits === 1){
-        let division = parseFloat(prompt("Type a digit: "), 10);
-        console.log("\nMultiply equals: ", division)
-    }
-    else if (number_of_digits > 1){
-        console.log("Type", number_of_digits, "digit(s): ")
-        let list = [];
-        for (let i = 1; i < number_of_digits; i++){
-            let digit = parseFloatfloat(input("Type a digit: "))
-            list.push(digit);
-        }
-        let outcome = undefined;
-        for (let i = 1; i < number_of_digits; i++){
-            let division = list[i] / list[i + 1];
-            outcome += division;
-        }
-        console.log("\nDivision equals: ", division)
+    switch (true){
+        case (number_of_digits < 0):
+            console.log("\nNumber of digits must be at least 0")
+            break;
+        case (number_of_digits === 0):
+            console.log("\nDivision equals:", number_of_digits)
+            break;
+        case (number_of_digits === 1):
+            let outcome = parseFloat(prompt("Type a digit: "), 10);
+            console.log("\Division equals: ", outcome)
+            break;
+        case (number_of_digits > 1):
+            console.log("Type", number_of_digits, "digit(s): ")
+            let list = [];
+            for (let i = 0; i < number_of_digits; i++){
+                let digit = parseFloat(prompt("Type a digit: "), 10)
+                list.push(digit);
+            }
+            let division = 0;
+            for (let i = 0; i < list.length; i++){
+                if (division === 0){
+                    division = list[i];                     
+                }
+                else {
+                    division = division / list[i];  
+                }
+            }
+            console.log("\nDivision equals: ", division)
+            break;
     }
 }
 
