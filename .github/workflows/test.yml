@@ -11,7 +11,7 @@ jobs:
       - run: python --version
       - run: |
             OUTPUT=$(python Python/ex3.py)
-            if [ "$OUTPUT" != "[1, 2, 3, 4, 5, 6, 12]" ]; THEN
+            if [ "$OUTPUT" != "[1, 2, 3, 4, 5, 6, 12]" ]; then
               echo "Wrong output for ex3.py"
-              exit -1
+              exit 1
             fi
