@@ -85,10 +85,10 @@ function division(){
             let digit = parseFloatfloat(input("Type a digit: "))
             list.push(digit);
         }
-        let outcome = 0
+        let outcome = undefined;
         for (let i = 1; i < number_of_digits; i++){
-            let division = list[i] / list[i + 1]
-            outcome += division
+            let division = list[i] / list[i + 1];
+            outcome += division;
         }
         console.log("\nDivision equals: ", division)
     }
