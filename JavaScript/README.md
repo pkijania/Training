@@ -8,7 +8,7 @@ Please type lines from README.md file into terminal before running any below pro
 
 ### Ex1
 
-Task: Create menu with addition, subtraction and printing numbers functions
+Task: Create simple calculator
 
 [Solution](ex1.js)
 

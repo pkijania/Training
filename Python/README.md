@@ -2,7 +2,7 @@
 
 ### Ex1
 
-Task: Create menu with addition, subtraction, multiply and division
+Task: Create simple calculator
 
 [Solution](ex1.py)
 
