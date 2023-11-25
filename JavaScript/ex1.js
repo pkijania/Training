@@ -85,7 +85,7 @@ function division(){
             let digit = parseFloatfloat(input("Type a digit: "))
             list.push(digit);
         }
-        let outcome = undefined;
+        let outcome = 0;
         for (let i = 1; i < number_of_digits; i++){
             let division = list[i] / list[i + 1];
             outcome += division;
