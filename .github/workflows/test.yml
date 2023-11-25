@@ -1,5 +1,7 @@
 name: ci checks
-on: push
+on:
+  push:
+    paths: 'Python/**'
 jobs:
   python_validation:
     runs-on: ubuntu-latest
