@@ -18,4 +18,5 @@ function sort(list){
     }
     return list;
 }
+
 console.log(sort([1, 5, 3, 6, 2, 9, 7]))

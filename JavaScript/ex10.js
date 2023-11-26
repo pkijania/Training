@@ -88,4 +88,5 @@ function cashmachine(){
         }
     }
 }
+
 cashmachine()

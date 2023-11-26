@@ -11,5 +11,4 @@ def toss_game():
         print('wrong')
     return user, computer
 
-out = toss_game()
-print(out)
+print(toss_game())

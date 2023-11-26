@@ -116,41 +116,38 @@ class Calculations{
     }
 }
 
-class Menu{
-    menu(){
-        const calculations = new Calculations();
-        let choice = 0;
-        while (choice != 5){
-            console.log("\nMenu")
-            console.log("1 = Addition of n digits")
-            console.log("2 = Subtraction of n digits")
-            console.log("3 = Multipy of n digits")
-            console.log("4 = Division of n digits")
-            console.log("5 = Exit the program\n")
-            choice = parseInt(prompt("\nWhat would you like to do?: "), 10)
-            switch (true){
-                case (choice === 1):
-                    calculations.addition();
-                    break;
-                case (choice === 2):
-                    calculations.subtraction();
-                    break;
-                case (choice === 3):
-                    calculations.multiply();
-                    break;
-                case (choice === 4):
-                    calculations.division();
-                    break;
-                case (choice === 5):
-                    break;
-                case (choice < 1 || choice > 5):
-                    console.log("Wrong action, choose again")
-                    break;
-            }
-            console.log("End")
+function menu(){
+    const calculations = new Calculations();
+    let choice = 0;
+    while (choice != 5){
+        console.log("\nMenu")
+        console.log("1 = Addition of n digits")
+        console.log("2 = Subtraction of n digits")
+        console.log("3 = Multipy of n digits")
+        console.log("4 = Division of n digits")
+        console.log("5 = Exit the program\n")
+        choice = parseInt(prompt("\nWhat would you like to do?: "), 10)
+        switch (true){
+            case (choice === 1):
+                calculations.addition();
+                break;
+            case (choice === 2):
+                calculations.subtraction();
+                break;
+            case (choice === 3):
+                calculations.multiply();
+                break;
+            case (choice === 4):
+                calculations.division();
+                break;
+            case (choice === 5):
+                break;
+            case (choice < 1 || choice > 5):
+                console.log("Wrong action, choose again")
+                break;
         }
+        console.log("End")
     }
 }
 
-const e = new Menu();
-e.menu();
+menu();

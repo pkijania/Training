@@ -8,5 +8,4 @@ function sum_of_values(list){
     return sum;
 }
 
-out = sum_of_values([1, 2, 3, 4, 5])
-console.log(out)
+console.log(sum_of_values([1, 2, 3, 4, 5]))

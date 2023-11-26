@@ -7,5 +7,5 @@ function reverse(list){
     }
     return new_list;
 }
-out = reverse([1, 2, 3, 4, 5])
-console.log(out)
+
+console.log(reverse([1, 2, 3, 4, 5]))

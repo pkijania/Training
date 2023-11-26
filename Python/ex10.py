@@ -54,4 +54,5 @@ def cashmachine():
                         break
                     else:
                         print("Wrong action")
+
 cashmachine()

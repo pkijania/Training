@@ -14,5 +14,5 @@ function even(list){
     console.log("number of even digits", even_number)
     console.log("number of odd digits", odd_number)
 }
-out = even([1, 2, 3, 4, 5, 6, 7])
-console.log(out)
+
+console.log(even([1, 2, 3, 4, 5, 6, 7]))

@@ -12,6 +12,5 @@ def even_odd(list):
     print("number of even digits", even)
     print("number of odd digits", odd)
     return (even, odd)
-
-out = even_odd([1,2,3,4,5,67])
-print(out)
+ 
+print(even_odd([1,2,3,4,5,67]))

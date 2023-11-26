@@ -9,7 +9,7 @@ function palindrome(list){
     return true;
 }
 
-out =  palindrome(["a", "b", "b", "a"])
+const out =  palindrome(["a", "b", "b", "a"]);
 if (out){
     console.log("it is a palindrome")
 }

@@ -7,5 +7,4 @@ def sum_of_values(list):
         sum = sum + list[i]
     return sum
 
-out = sum_of_values([1,2,3,4,5])
-print(out)
+print(sum_of_values([1,2,3,4,5]))
