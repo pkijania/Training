@@ -21,10 +21,10 @@ class Calculations:
             case _ if number_of_digits < 0:
                 print("\nNumber of digits must be at least 0")
             case _ if number_of_digits == 0:
-                    print("Subtraction is: ", number_of_digits)
+                print("Subtraction is: ", number_of_digits)
             case _ if number_of_digits == 1:
-                    subtraction = float(input("Type a digit: "))
-                    print("\nSubtraction is: ", subtraction)
+                subtraction = float(input("Type a digit: "))
+                print("\nSubtraction is: ", subtraction)
             case _ if number_of_digits > 1:
                 print("Type", number_of_digits, "digit(s): ")
                 list = []
