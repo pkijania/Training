@@ -8,7 +8,7 @@ Please type lines from README.md file into terminal before running any below pro
 
 ### Ex1
 
-Task: Create simple calculator
+Task: Create menu with calculations
 
 [Solution](ex1.js)
 

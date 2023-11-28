@@ -1,4 +1,4 @@
-// 1. Create simple calculator
+// 1. Create menu with calculations
 
 const prompt = require ("prompt-sync")();
 
