@@ -1,4 +1,4 @@
-// 10. 10. Create cashmachine - withdraws only 50, 20 and 10 zł, account balance cannot exceed 500 zł or be lower than 10 zł
+// 10. Create cashmachine - withdraws only 50, 20 and 10 zł, account balance cannot exceed 500 zł or be lower than 10 zł
 
 const prompt = require ("prompt-sync")();
 

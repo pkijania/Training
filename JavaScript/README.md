@@ -71,3 +71,9 @@ Task: Create cashmachine - withdraws only 50,20 and 10 zł, max account balance 
 Task: Class containing some of previous exercises and two simple methods for creating tables
 
 [Solution](ex11.js)
+
+### Ex12
+
+Task: Create simple calculator
+
+[Solution](ex12.js)
