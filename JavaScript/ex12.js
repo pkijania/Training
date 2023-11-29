@@ -3,17 +3,17 @@
 const prompt = require ("prompt-sync")();
 
 function digit(){
-    let number = parseInt(prompt("Type a digit: ", 10));
+    let number = prompt("Type a digit: ", 10);
     while (Number.isInteger(+number) !== true){
-        number = parseInt(prompt("Wrong digit, please type a correct digit: ", 10));
+        number = prompt("Wrong digit, please type a correct digit: ", 10);
     }
-    return number;
+    return parseInt(number, 10);
 }
 
 function calculator(){
     let outcome = digit();
     while (true){
-        let choice = String(prompt("Type an operator (+, -, *, /, =): "), 10);
+        let choice = String(prompt("Type an operator (+, -, *, /, =): "));
         switch (choice.trim()){
             case ("+"):
                 outcome = outcome + digit();
