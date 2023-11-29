@@ -8,7 +8,7 @@ Please type lines from README.md file into terminal before running any below pro
 
 ### Ex1
 
-Task: Create simple calculator
+Task: Create menu with calculations
 
 [Solution](ex1.js)
 
@@ -71,3 +71,9 @@ Task: Create cashmachine - withdraws only 50,20 and 10 zł, max account balance 
 Task: Class containing some of previous exercises and two simple methods for creating tables
 
 [Solution](ex11.js)
+
+### Ex12
+
+Task: Create simple calculator
+
+[Solution](ex12.js)
