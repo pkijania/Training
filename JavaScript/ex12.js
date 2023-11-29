@@ -2,39 +2,36 @@
 
 const prompt = require ("prompt-sync")();
 
+function digit(){
+    let number = parseInt(prompt("Type a digit: ", 10));
+    while (Number.isInteger(+number) !== true){
+        number = parseInt(prompt("Wrong digit, please type a correct digit: ", 10));
+    }
+    return number;
+}
+
 function calculator(){
-    let first_digit = parseInt(prompt("Type a digit: "), 10);
-    let outcome = first_digit;
-    let digit = 0;
-    let prompt_text = "Type another digit: ";
+    let outcome = digit();
     while (true){
         let choice = String(prompt("Type an operator (+, -, *, /, =): "), 10);
-        let choice_trimmed = choice.trim();
-        let is_digit = Number.isInteger(choice);
-        if (Number.isInteger(+choice)){
-            console.log("You typed a digit, please type an operator (+, -, *, /, =): ")
-        }
-        else {
-            switch (choice_trimmed){
-                case ("+"):
-                    digit = parseInt(prompt(prompt_text), 10);
-                    outcome = outcome + digit;
-                    break;
-                case ("-"):
-                    digit = parseInt(prompt(prompt_text), 10);
-                    outcome = outcome - digit;
-                    break;
-                case ("*"):
-                    digit = parseInt(prompt(prompt_text), 10);
-                    outcome = outcome * digit;
-                    break;
-                case ("/"):
-                    digit = parseInt(prompt(prompt_text), 10);
-                    outcome = outcome / digit;
-                    break;
-                case ("="):
-                    return outcome;
-            }
+        switch (choice.trim()){
+            case ("+"):
+                outcome = outcome + digit();
+                break;
+            case ("-"):
+                outcome = outcome - digit();
+                break;
+            case ("*"):
+                outcome = outcome * digit();
+                break;
+            case ("/"):
+                outcome = outcome / digit();
+                break;
+            case ("="):
+                return outcome;
+            default:
+                console.log("Wrong operator")
+                break;
         }
     }
 }
