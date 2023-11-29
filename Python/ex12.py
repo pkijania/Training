@@ -8,7 +8,7 @@ def calculator():
         choice = str(input("Type an operator (+, -, *, /, =): "))
         choice_trimmed = choice.strip()
         is_digit = choice.isdigit()
-        if is_digit is True:
+        if is_digit:
             print("You typed a digit, please type an operator (+, -, *, /, =): ")
         else:
             match choice_trimmed:
