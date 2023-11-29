@@ -3,9 +3,9 @@
 const prompt = require ("prompt-sync")();
 
 function digit(){
-    let number = prompt("Type a digit: ", 10);
+    let number = prompt("Type a digit: ");
     while (Number.isInteger(+number) !== true){
-        number = prompt("Wrong digit, please type a correct digit: ", 10);
+        number = prompt("Wrong digit, please type a correct digit: ");
     }
     return parseInt(number, 10);
 }
