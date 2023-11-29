@@ -1,30 +1,27 @@
 # 12. Create simple calculator
 
+def is_digit():
+    digit = input("Type a digit: ")
+    while not digit.isdigit():
+        digit = input("Wrong digit, please type a correct digit: ")
+    return int(digit)
+
 def calculator():
-    first_digit = int(input("Type a digit: "))
-    outcome = first_digit
-    prompt_text = "Type another digit: "
+    outcome = int(input("Type a digit: "))
     while True:
         choice = str(input("Type an operator (+, -, *, /, =): "))
-        choice_trimmed = choice.strip()
-        is_digit = choice.isdigit()
-        if is_digit:
-            print("You typed a digit, please type an operator (+, -, *, /, =): ")
-        else:
-            match choice_trimmed:
-                case "+":
-                    digit = int(input(prompt_text))
-                    outcome = outcome + digit
-                case "-":
-                    digit = int(input(prompt_text))
-                    outcome = outcome - digit
-                case "*":
-                    digit = int(input(prompt_text))
-                    outcome = outcome * digit
-                case "/":
-                    digit = int(input(prompt_text))
-                    outcome = outcome / digit
-                case "=":
-                    return outcome
+        match choice.strip():
+            case "+":  
+                outcome = outcome + is_digit()
+            case "-":
+                outcome = outcome - is_digit()
+            case "*":
+                outcome = outcome * is_digit()
+            case "/":
+                outcome = outcome / is_digit()
+            case "=":
+                return outcome
+            case _:
+                print("Wrong operator, please type correct operator (+, -, *, /, =): ")
 
 print("Outcome =", calculator())
