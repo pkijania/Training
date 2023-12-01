@@ -14,14 +14,10 @@ function tablesum(){
             digit = parseInt(prompt("Type a digit: "), 10);
             for (let j = 0; j < column; j++){
                 list[i][j] = digit + "";
-            }
-        }
-
-        for (let i = 0; i < row; i++){
-            for (let j = 0; j < column; j++){
                 sum += parseInt(list[i][j], 10);
             }
         }
+
         console.log(list, "\nSum of elements in a table is: " + sum)
 }
 
