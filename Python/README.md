@@ -62,7 +62,7 @@ Task: Create cashmachine - withdraws only 50,20 and 10 zł, max account balance 
 
 ### Ex11
 
-Task: Class containing some of previous exercises and two simple methods for creating tables
+Task: Create and display a table of n columns and n rows and count the sum of all it's elements
 
 [Solution](ex11.py)
 

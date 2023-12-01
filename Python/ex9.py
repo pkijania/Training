@@ -8,7 +8,7 @@ def palindrome(list):
     return True
 
 out = palindrome([1,2,2,1])
-if (out):
+if out:
     print("yes")
 else:
     print("no")
