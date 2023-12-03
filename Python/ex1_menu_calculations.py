@@ -29,8 +29,8 @@ class Calculations:
             sum_of_digits = 0
             for i in range (1, len(list)):
                 sum_of_digits += list[i]
-            outcome = list[0] - sum_of_digits
-            print("\nSubtraction is: ", outcome)
+            subtraction = list[0] - sum_of_digits
+            print("\nSubtraction is: ", subtraction)
 
     def multiply():
         number_of_digits = int(input("How many digits?: "))
@@ -66,7 +66,7 @@ class Calculations:
                     division /= list[i]
             print("\nDivision equals: ", division)
 
-class Menu:
+def Menu():
     choice = 0
     while True:
         print("\nMenu:")
@@ -90,3 +90,5 @@ class Menu:
             case _:
                 print("Wrong action, choose again")
     print("End")
+
+Menu()

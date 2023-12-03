@@ -16,16 +16,16 @@ function calculator(){
         let choice = String(prompt("Type an operator (+, -, *, /, =): "));
         switch (choice.trim()){
             case ("+"):
-                outcome = outcome + digit();
+                outcome += digit();
                 break;
             case ("-"):
-                outcome = outcome - digit();
+                outcome -= digit();
                 break;
             case ("*"):
-                outcome = outcome * digit();
+                outcome *= digit();
                 break;
             case ("/"):
-                outcome = outcome / digit();
+                outcome /= digit();
                 break;
             case ("="):
                 return outcome;
