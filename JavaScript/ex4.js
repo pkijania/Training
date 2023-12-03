@@ -1,4 +1,4 @@
-// 4. Task: Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 with a word "Buzz" and numbers divisible by 3 and 5 with a word "FizzBuzz"
+// 4. Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 with a word "Buzz" and numbers divisible by 3 and 5 with a word "FizzBuzz"
 
 function fizz_buzz(){
     for (let i = 1; i <= 101; i++){

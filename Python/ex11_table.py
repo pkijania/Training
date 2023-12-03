@@ -15,7 +15,7 @@ def table_sum():
     for i in range(row):
         for j in range(column):
             print(list[i][j], end = ' ')
-            sum = sum + list[i][j]
+            sum += list[i][j]
         print()
     
     print("\nSum of elements in a table is: " + str(sum))

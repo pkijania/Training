@@ -3,9 +3,9 @@
 import random
 
 def toss_game():
-    user = str(input("heads or tails? "))
-    computer = random.choice(["heads","tails"])
-    if(user == computer):
+    user = str(input("heads or tails?: "))
+    computer = random.choice(["heads", "tails"])
+    if user == computer:
         print('correct')
     else:
         print('wrong')

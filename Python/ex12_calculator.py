@@ -12,13 +12,13 @@ def calculator():
         choice = str(input("Type an operator (+, -, *, /, =): "))
         match choice.strip():
             case "+":  
-                outcome = outcome + digit()
+                outcome += digit()
             case "-":
-                outcome = outcome - digit()
+                outcome -= digit()
             case "*":
-                outcome = outcome * digit()
+                outcome *= digit()
             case "/":
-                outcome = outcome / digit()
+                outcome /= digit()
             case "=":
                 return outcome
             case _:

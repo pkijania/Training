@@ -1,73 +1,73 @@
 ## Various small excercises
 
-### Ex1
+### Ex1 - Menu with calucations
 
-Task: Create menu with calculations
+Task: Create menu with calculations : addition, subtraction, multiply and division of n digits
 
-[Solution](ex1.py)
+[Solution](ex1_menu_calculations.py)
 
-### Ex2
+### Ex2 - Coin toss
 
 Task: Create a coin toss game - predict the outcome of a coin toss
 
-[Solution](ex2.py)
+[Solution](ex2_coin_toss.py)
 
-### Ex3
+### Ex3 - Array sort
 
 Task: Sort numbers in an array
 
-[Solution](ex3.py)
+[Solution](ex3_array_sort.py)
 
-### Ex4
+### Ex4 - Fizz buzz
 
 Task: Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 with a word "Buzz" and numbers divisible by 3 and 5 with a word "FizzBuzz"
 
-[Solution](ex4.py)
+[Solution](ex4_fizz_buzz.py)
 
-### Ex5
+### Ex5 - Min and max
 
 Task: Find min and max value
 
-[Solution](ex5.py)
+[Solution](ex5_min_max.py)
 
-### Ex6
+### Ex6 - Array sum
 
 Task: Print the sum of values in array
 
-[Solution](ex6.py)
+[Solution](ex6_array_sum.py)
 
-### Ex7
+### Ex7 - Even and odd
 
 Task: Count the amount of even and odd numbers
 
-[Solution](ex7.py)
+[Solution](ex7_even_odd.py)
 
-### Ex8
+### Ex8 - Array reverse
 
 Task: Reverse values in an array
 
-[Solution](ex8.py)
+[Solution](ex8_array_reverse.py)
 
-### Ex9
+### Ex9 - Palindrome
 
 Task: Check if a word or a number is a palindrome
 
-[Solution](ex9.py)
+[Solution](ex9_palindrome.py)
 
-### Ex10
+### Ex10 - Cashmashine
 
-Task: Create cashmachine - withdraws only 50,20 and 10 zł, max account balance can be 500 zł
+Task: Create cashmachine that withdraws only values of 50, 20 and 10 and has a max account balance of 500
 
-[Solution](ex10.py)
+[Solution](ex10_cashmachine.py)
 
-### Ex11
+### Ex11 - Table
 
 Task: Create and display a table of n columns and n rows and count the sum of all it's elements
 
-[Solution](ex11.py)
+[Solution](ex11_table.py)
 
-### Ex12
+### Ex12 - Calculator
 
 Task: Create simple calculator
 
-[Solution](ex12.py)
+[Solution](ex12_calculator.py)

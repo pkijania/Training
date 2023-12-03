@@ -12,81 +12,77 @@ function cashmachine(){
             console.log("Wrong amount of account balance");
         }
         else {
-            while (choice != 4){
-
+            while (true){
                 console.log("\nMenu");
                 console.log("1 = Show account balance:");
                 console.log("2 = Deposit money:");
                 console.log("3 = Pay out money:");
                 console.log("4 = Exit:");
-                choice = parseInt(prompt("\nChoose action:"), 10);
-        
-                if (choice === 1){
-                    console.log("\nAccount balance:", balance);
-                }
-        
-                else if (choice === 2){
-                    if (balance >= 500){
-                        console.log("Cant deposit more money. Account balance cannot exceed 500 zł")
-                    }
-                    else {
-                        action = parseInt(prompt("How much money to deposit?: "), 10);
-                        if ((action + balance) > 500){
-                            console.log("Account balance cannot exceed 500 zł");
+                choice = parseInt(prompt("\nChoose action: "), 10);
+                switch (choice){
+                    case (1):
+                        console.log("\nAccount balance:", balance);
+                        break;
+                    case (2):
+                        if (balance >= 500){
+                            console.log("Cant deposit more money. Account balance cannot exceed 500 zł")
                         }
-                        else {
-                            if (action % 50 === 0){
-                                balance = balance + action;
-                            }
-                            else if (action % 20 === 0){
-                                balance = balance + action;
-                            }
-                            else if (action % 10 === 0 ){
-                                balance = balance + action;
+                        else{
+                            action = parseInt(prompt("How much money to deposit?: "), 10);
+                            if ((action + balance) > 500){
+                                console.log("Account balance cannot exceed 500 zł");
                             }
                             else {
-                                console.log("Cashmachine deposits only bank notes of 50, 20 and 10 zł value. Enter a different value.")
+                                if (action % 50 === 0){
+                                    balance += action;
+                                }
+                                else if (action % 20 === 0){
+                                    balance += action;
+                                }
+                                else if (action % 10 === 0 ){
+                                    balance += action;
+                                }
+                                else {
+                                    console.log("Cashmachine deposits only bank notes of 50, 20 and 10 zł value. Enter a different value.")
+                                }
                             }
                         }
-                    }
-                }
-        
-                else if (choice === 3){
-                    if (balance <= 10){
-                        console.log("Cant pay out more money. Account balance cannot be lower than 10 zł")
-                    }
-                    else {
-                        action = parseInt(prompt("How much money to pay out?: "), 10)
-                        if ((balance - action) < 10){
-                            console.log("Account balance be lower than 10 zł");
+                        break;
+                    case (3):
+                        if (balance <= 10){
+                            console.log("Cant pay out more money. Account balance cannot be lower than 10 zł")
                         }
-                        else {
-                            if (action % 50 === 0){
-                                balance = balance - action;
-                            }
-                            else if (action % 20 === 0){
-                                balance = balance - action;
-                            }
-                            else if (action % 10 === 0 ){
-                                balance = balance - action;
+                        else{
+                            action = parseInt(prompt("How much money to pay out?: "), 10)
+                            if ((balance - action) < 10){
+                                console.log("Account balance be lower than 10 zł");
                             }
                             else {
-                                console.log("Cashmachine pays out only bank notes of 50, 20 and 10 zł value. Enter a different value.")
+                                if (action % 50 === 0){
+                                    balance -= action;
+                                }
+                                else if (action % 20 === 0){
+                                    balance -= action;
+                                }
+                                else if (action % 10 === 0 ){
+                                    balance -= action;
+                                }
+                                else {
+                                    console.log("Cashmachine pays out only bank notes of 50, 20 and 10 zł value. Enter a different value.")
+                                }
                             }
                         }
-                    }
-                }
-        
-                else if (choice === 4){
-                    console.log("Logged out");
-                    break;
-                }
-                else {
-                    console.log("Wrong action");
+                        break;
+                    case (4):
+                        console.log("Logged out\n");
+                        return balance;
+                    default:
+                        console.log("Wrong action");
+                        break;                    
                 }
             }
         }
     }
 }
 
-cashmachine()
+console.log("Balance is:", cashmachine(), "zł")

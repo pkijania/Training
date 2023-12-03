@@ -12,9 +12,9 @@ def MinMax():
         max = list[0]
         min = list[0]
         for i in range (len(list)):
-            if (list[i] < min):
+            if list[i] < min:
                 min = list[i]
-            if (list[i] > max):
+            if list[i] > max:
                 max = list[i]
         print(min, "min")
         print(max, "max")
