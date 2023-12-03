@@ -8,7 +8,6 @@ function tablesum(){
         let sum = 0;
         let digit = 0;
         let list = [];
-
         for (let i = 0; i < row; i++){
             list[i] = [];
             digit = parseInt(prompt("Type a digit: "), 10);
@@ -17,7 +16,6 @@ function tablesum(){
                 sum += parseInt(list[i][j], 10);
             }
         }
-
         console.log(list, "\nSum of elements in a table is: " + sum)
 }
 
