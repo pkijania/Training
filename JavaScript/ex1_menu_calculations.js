@@ -96,7 +96,7 @@ class Calculations{
 function menu(){
     const calculations = new Calculations();
     let choice = 0;
-    while (choice != 5){
+    while (true){
         console.log("\nMenu")
         console.log("1 = Addition of n digits")
         console.log("2 = Subtraction of n digits")
@@ -118,7 +118,7 @@ function menu(){
                 calculations.division();
                 break;
             case (5):
-                break;
+                return;
             default:
                 console.log("Wrong action, choose again")
                 break;
