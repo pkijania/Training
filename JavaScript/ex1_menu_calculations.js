@@ -93,7 +93,7 @@ class Calculations{
     }
 }
 
-function menu(){
+if (require.main === module){
     const calculations = new Calculations();
     let choice = 0;
     while (true){
@@ -126,5 +126,3 @@ function menu(){
         console.log("End")
     }
 }
-
-menu();
