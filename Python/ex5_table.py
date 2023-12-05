@@ -1,6 +1,6 @@
-# 11. Create and display a table of n columns and n rows and count the sum of all it's elements
+# 5. Create and display a table of n columns and n rows and count the sum of all it's elements
 
-def table_sum():
+if __name__ == "__main__":
     row = int(input("How many rows? "))
     column = int(input("How many columns? "))
     list = []
@@ -15,5 +15,3 @@ def table_sum():
             sum += list[i][j]
         print()
     print("\nSum of elements in a table is: " + str(sum))
-
-table_sum()

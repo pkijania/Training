@@ -1,4 +1,4 @@
-# 12. Create simple calculator
+# 4. Create simple calculator
 
 def digit():
     number = input("Type a digit: ")
@@ -6,7 +6,7 @@ def digit():
         number = input("Wrong digit, please type a correct digit: ")
     return int(number)
 
-def calculator():
+if __name__ == "__main__":
     outcome = digit()
     while True:
         choice = str(input("Type an operator (+, -, *, /, =): "))
@@ -20,8 +20,7 @@ def calculator():
             case "/":
                 outcome /= digit()
             case "=":
-                return outcome
+                print("Outcome =", outcome)
+                break
             case _:
                 print("Wrong operator")
-
-print("Outcome =", calculator())
