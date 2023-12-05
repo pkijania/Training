@@ -27,7 +27,7 @@ class Validators:
 
 class Actions:
     def print(balance):
-        print("\nAccount balance:", balance)
+        print("\nAccount balance is:", balance)
         return balance
     
     def deposit(balance):
@@ -88,15 +88,13 @@ if __name__ == "__main__":
                 choice = Validators.choice()
                 match choice:
                     case 1:
-                        Actions.print(balance)
+                        balance = Actions.print(balance)
                     case 2:
-                        new_balance = Actions.deposit(balance)
-                        balance = new_balance
+                        balance = Actions.deposit(balance)
                     case 3:
-                        new_balance = Actions.withdraw(balance)
-                        balance = new_balance
+                        balance = Actions.withdraw(balance) 
                     case 4:
-                        Actions.exit(balance)
+                        balance = Actions.exit(balance)
                         break
                     case _:
                         print("Wrong action")
