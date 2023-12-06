@@ -3,18 +3,17 @@
 import random
 
 def random_values():
-    lista = []
+    old_list = []
     list_length = int(input("How many digits? "))
     for i in range(list_length):
-        lista.append(random.randint(0, list_length))
-    print(lista)
+        old_list.append(random.randint(0, list_length))
+    print(old_list)
 
     temp_set = set()
-
-    for item in lista:
+    for item in old_list:
         temp_set.add(item)
-
-    output = list(temp_set)
-    return output
+    print(temp_set)
+    new_list = list(temp_set)
+    return new_list
 
 print(random_values())

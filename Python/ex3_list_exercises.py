@@ -1,4 +1,4 @@
-# 3. Create menu with List exercises - Sort numbers, find min and max value, count the amount of even and odd numbers, reverse values, check if a word or a number is a palindrome
+# 3. Create menu with list exercises - Sort numbers, find min and max value, count the amount of even and odd numbers, reverse values, check if a word or a number is a palindrome
 
 class Validators:
     def digit(prompt, error):
@@ -69,37 +69,65 @@ class List_exercises:
         for i in range(0, int(length / 2)):
             if list[i] != list[length - i - 1]:
                 outcome = False
-        if outcome:
-            print("It is a palindrome")
-        else:
-            print("It is not a palindrome")
+        return outcome
 
 if __name__ == "__main__":
+    menu_first = "\nWhat would you like to do?: "
+    menu_second = "Wrong action, choose again: "
+    menu_third = "Your list is:"
     list = Validators.new_list()
     while True:
         print("\nMenu:")
-        print("1 = Print a list")
-        print("2 = Sort a list")
-        print("3 = Print max and min value from a list")
-        print("4 = Print number of even and odd digits from a list")
-        print("5 = Reverse a list")
-        print("6 = Check if a list is a palindrome")
-        print("7 = Exit\n")
-        choice = Validators.digit("What would you like to do?: ", "Wrong action, choose again: ")
+        print("1 = Show info about a list")
+        print("2 = Modify a list")
+        print("3 = Exit\n")
+        print(menu_third, list)
+        choice = Validators.digit(menu_first, menu_second)
         match choice:
             case 1:
-                print("Your list is:", list)
+                while True:
+                    print("\nMenu:")
+                    print("1 = Print max and min value from a list")
+                    print("2 = Print number of even and odd digits from a list")
+                    print("3 = Check if a list is a palindrome")
+                    print("4 = Go back\n")
+                    print(menu_third, list)
+                    choice_info = Validators.digit(menu_first, menu_second)
+                    match choice_info:
+                        case 1:
+                            print("\nMin and max values are:", List_exercises.min_max(list))
+                        case 2:
+                            print("\nNumber of even and odd values is:", List_exercises.even_odd(list))
+                        case 3:
+                            if List_exercises.palindrome(list):
+                                print("\nIt is a palindrome")
+                            else:
+                                print("\nIt is not a palindrome")
+                        case 4:
+                            break
+                        case _:
+                            ("Wrong action")
             case 2:
-                print("Sorted list:", List_exercises.sort(list))
+                while True:
+                    print("\nMenu:")
+                    print("1 = Create a new list")
+                    print("2 = Sort a list")
+                    print("3 = Reverse a list")
+                    print("4 = Go back\n")
+                    print(menu_third, list)
+                    choice_modify = Validators.digit(menu_first, menu_second)
+                    match choice_modify:
+                        case 1:
+                            list = Validators.new_list()
+                        case 2:
+                            list = List_exercises.sort(list)
+                        case 3:
+                            list = List_exercises.reverse(list)
+                        case 4:
+                            break
+                        case _:
+                            ("Wrong action")
             case 3:
-                print("Min and max values are:", List_exercises.min_max(list))
-            case 4:
-                print("Number of even and odd values is:", List_exercises.even_odd(list))
-            case 5:
-                print("Reversed list: ", List_exercises.reverse(list))
-            case 6:
-                List_exercises.palindrome(list)
-            case 7:
                 break
             case _:
                 ("Wrong action")
