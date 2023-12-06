@@ -1,4 +1,4 @@
-// 12. Create simple calculator
+// 4. Create simple calculator
 
 const prompt = require ("prompt-sync")();
 

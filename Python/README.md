@@ -30,20 +30,14 @@ Task: Create and display a table of n columns and n rows and count the sum of al
 
 [Solution](ex5_table.py)
 
-### Ex6 - Fizz buzz
-
-Task: Replace numbers divisible by 3 with a word "Fizz", numbers divisible by 5 with a word "Buzz" and numbers divisible by 3 and 5 with a word "FizzBuzz"
-
-[Solution](ex6_fizz_buzz.py)
-
-### Ex7 - Coin toss
+### Ex6 - Coin toss
 
 Task: Create a coin toss game - predict the outcome of a coin toss
 
-[Solution](ex7_coin_toss.py)
+[Solution](ex6_coin_toss.py)
 
-### Ex8 - Random list
+### Ex7 - Random list
 
 Task: Create a list with random numbers and delete duplicates
 
-[Solution](ex8_random.py)
+[Solution](ex7_random.py)

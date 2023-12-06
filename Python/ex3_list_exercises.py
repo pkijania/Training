@@ -10,7 +10,7 @@ class Validators:
     def new_list():
         list = []
         which_list = "0"
-        while (which_list != "d" or "c"):
+        while (which_list != "default" or "custom"):
             which_list = str(input("Use default list (1, 2, 0, 2, 1) or custom list? (default/custom): "))
             if which_list == "default":
                 list = [1, 2, 0, 2, 1]

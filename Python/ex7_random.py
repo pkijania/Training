@@ -7,13 +7,13 @@ def random_values():
     list_length = int(input("How many digits? "))
     for i in range(list_length):
         old_list.append(random.randint(0, list_length))
-    print(old_list)
-
     temp_set = set()
     for item in old_list:
         temp_set.add(item)
-    print(temp_set)
     new_list = list(temp_set)
-    return new_list
+    if len(old_list) == len(new_list):
+        print("List without duplicates:", new_list)
+    else:
+        print("List:", old_list, "List without duplicates:", new_list)
 
-print(random_values())
+random_values()

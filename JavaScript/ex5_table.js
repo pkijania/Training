@@ -1,4 +1,4 @@
-// 11. Create and display a table of n columns and n rows and count the sum of all it's elements
+// 5. Create and display a table of n columns and n rows and count the sum of all it's elements
 
 const prompt = require ("prompt-sync")();
 

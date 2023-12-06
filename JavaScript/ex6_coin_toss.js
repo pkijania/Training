@@ -1,4 +1,4 @@
-// 2. Create a coin toss game - predict the outcome of a coin toss
+// 7. Create a coin toss game - predict the outcome of a coin toss
 
 const prompt = require ("prompt-sync")();
 

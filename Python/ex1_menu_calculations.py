@@ -9,29 +9,23 @@ class Validators:
 
 class Calculations:
     def addition():
+        sum = 0
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
-        if number_of_digits < 0:
-            print("\nNumber of digits must be at least 0")
-        else:
-            print("Type", number_of_digits, "digit(s): ")
-            sum = 0
-            for i in range(number_of_digits):
-                digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-                sum += digit
-            return sum
+        print("Type", number_of_digits, "digit(s): ")
+        for i in range(number_of_digits):
+            digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+            sum += digit
+        return sum
 
     def subtraction():
+        list = []
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
-        if number_of_digits < 0:
-            print("\nNumber of digits must be at least 0")
-        elif number_of_digits == 0:
+        if number_of_digits == 0:
             subtraction = number_of_digits
         elif number_of_digits == 1:
-            subtraction = float(input("Type a digit: "))
-            print("\nSubtraction equals:", subtraction)
+            subtraction = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
         else:
             print("Type", number_of_digits, "digit(s): ")
-            list = []
             for i in range (number_of_digits):
                 digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
                 list.append(digit)
@@ -39,27 +33,24 @@ class Calculations:
             for i in range (1, len(list)):
                 sum_of_digits += list[i]
             subtraction = list[0] - sum_of_digits
-            return subtraction
+        return subtraction
 
     def multiply():
+        multiply = 1
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
-        if number_of_digits < 0:
-            print("\nNumber of digits must be at least 0")
-        elif number_of_digits == 0:
+        if number_of_digits == 0:
             multiply = number_of_digits
         else :
             print("Type", number_of_digits, "digit(s): ")
-            multiply = 1
             for i in range(number_of_digits):
                 digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
                 multiply *= digit
-            return multiply
+        return multiply
     
     def division():
+        division = None
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
-        if number_of_digits < 0:
-            print("\nNumber of digits must be at least 0")
-        elif number_of_digits == 0:
+        if number_of_digits == 0:
             division = number_of_digits
         else:
             print("Type", number_of_digits, "digit(s): ")
@@ -67,13 +58,12 @@ class Calculations:
             for i in range(number_of_digits):
                 digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
                 list.append(digit)
-            division = None
             for i in range(len(list)):
                 if division is None:
                     division = list[i]
                 else:
                     division /= list[i]
-            return division
+        return division
 
 if __name__ == "__main__":
     while True:
