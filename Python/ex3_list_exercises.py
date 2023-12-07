@@ -106,7 +106,7 @@ if __name__ == "__main__":
                         case 4:
                             break
                         case _:
-                            ("Wrong action")
+                            print("Wrong action")
             case 2:
                 while True:
                     print("\nMenu:")
@@ -126,9 +126,9 @@ if __name__ == "__main__":
                         case 4:
                             break
                         case _:
-                            ("Wrong action")
+                            print("Wrong action")
             case 3:
                 break
             case _:
-                ("Wrong action")
+                print("Wrong action")
     print("End")
