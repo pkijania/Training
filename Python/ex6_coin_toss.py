@@ -3,12 +3,20 @@
 import random
 
 def toss_game():
+    correct_choices = ["heads", "tails"]
     user = str(input("heads or tails?: "))
-    computer = random.choice(["heads", "tails"])
+
+    if not user in correct_choices:
+        raise Exception(f"Unrecognized side of coin provided '{user}'")
+
+    computer = random.choice(correct_choices)
     if user == computer:
         print('correct')
     else:
         print('wrong')
     return user, computer
 
-print(toss_game())
+try:
+    print(toss_game())
+except Exception as wrong_user:
+    print(f"Error!!, program shut down due to {wrong_user}")
