@@ -1,4 +1,4 @@
-# 7. Create a coin toss game - predict the outcome of a coin toss
+# 6. Create a coin toss game - predict the outcome of a coin toss
 
 import random
 

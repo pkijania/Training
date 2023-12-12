@@ -36,8 +36,14 @@ Task: Create a coin toss game - predict the outcome of a coin toss
 
 [Solution](ex6_coin_toss.py)
 
-### Ex7 - Random list
+### Ex7 - Delete duplicates
 
 Task: Create a list with random numbers and delete duplicates
 
-[Solution](ex7_random.py)
+[Solution](ex7_duplicates.py)
+
+### Ex8 - Count numbers
+
+Task: Create a list with random numbers and count every number
+
+[Solution](ex8_count_numbers.py)
