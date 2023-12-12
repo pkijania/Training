@@ -2,7 +2,7 @@
 
 import random
 
-def random_values():
+def duplicates():
     old_list = []
     list_length = int(input("How many digits? "))
     for i in range(list_length):
@@ -18,4 +18,4 @@ def random_values():
     else:
         print("List:", old_list, "List without duplicates:", new_list)
 
-random_values()
+duplicates()

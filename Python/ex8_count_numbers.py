@@ -3,7 +3,7 @@
 import random
 import operator
 
-def random_values():
+def count_numbers():
     dictonary = {}
     list = []
     list_length = int(input("How many digits? "))
@@ -22,4 +22,4 @@ def random_values():
     sorted_dictionary = sorted(dictonary.items(), key = operator.itemgetter(0))
     return sorted_dictionary
 
-print(random_values())
+print(count_numbers())

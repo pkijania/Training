@@ -1,18 +1,20 @@
-// 8. Create a list with random numbers and delete duplicates
+// 7. Create a list with random numbers and delete duplicates
 
 const prompt = require ("prompt-sync")();
 
-function random_values(){
+function duplicates(){
     let old_list = [];
     let list_length = parseInt(prompt("How many digits? "), 10);
     for (let i = 0; i < list_length; i++){
         old_list.push(Math.floor(Math.random() * list_length));
     }
     const temp_set = new Set();
+
     for (let item of old_list){
         temp_set.add(item);
     }
     let new_list = Array.from(temp_set);
+    
     if (old_list.length === new_list.length){
         console.log("List without duplicates:", new_list)
     }
@@ -21,4 +23,4 @@ function random_values(){
     }
 }
 
-random_values()
+duplicates()

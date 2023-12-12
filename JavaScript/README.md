@@ -42,8 +42,14 @@ Task: Create a coin toss game - predict the outcome of a coin toss
 
 [Solution](ex6_coin_toss.js)
 
-### Ex7 - Random list
+### Ex7 - Delete duplicates
 
 Task: Create a list with random numbers and delete duplicates
 
-[Solution](ex7_random.js)
+[Solution](ex7_duplicates.js)
+
+### Ex8 - Count numbers
+
+Task: Create a list with random numbers and count every number
+
+[Solution](ex8_count_numbers.js)
