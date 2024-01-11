@@ -66,25 +66,28 @@ class Calculations:
         return division
 
 if __name__ == "__main__":
-    while True:
-        print("\nMenu:")
-        print("1 = Addition of n digits")
-        print("2 = Subtraction of n digits")
-        print("3 = Multiply of n digits")
-        print("4 = Division of n digits")
-        print("5 = Exit the program\n")
-        choice = Validators.digit("What would you like to do?: ", "Wrong action, choose again: ")
-        match choice:
-            case 1:
-                print("\nSum is:", Calculations.addition())
-            case 2:
-                print("\nSubtraction is:", Calculations.subtraction())
-            case 3:
-                print("\nMultiply equals:", Calculations.multiply())
-            case 4:
-                print("\nDivision equals:", Calculations.division())
-            case 5:
-                break
-            case _:
-                print("Wrong action, choose again")
-    print("End")
+    try:
+        while True:
+            print("\nMenu:")
+            print("1 = Addition of n digits")
+            print("2 = Subtraction of n digits")
+            print("3 = Multiply of n digits")
+            print("4 = Division of n digits")
+            print("5 = Exit the program\n")
+            choice = Validators.digit("What would you like to do?: ", "Wrong action, choose again: ")
+            match choice:
+                case 1:
+                    print("\nSum is:", Calculations.addition())
+                case 2:
+                    print("\nSubtraction is:", Calculations.subtraction())
+                case 3:
+                    print("\nMultiply equals:", Calculations.multiply())
+                case 4:
+                    print("\nDivision equals:", Calculations.division())
+                case 5:
+                    break
+                case _:
+                    print("Wrong action, choose again")
+        print("End")
+    except Exception as wrong_user:
+        print(f"Error!!, program shut down due to {wrong_user}")

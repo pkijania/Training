@@ -7,20 +7,23 @@ def digit():
     return int(number)
 
 if __name__ == "__main__":
-    outcome = digit()
-    while True:
-        choice = str(input("Type an operator (+, -, *, /, =): "))
-        match choice.strip():
-            case "+":  
-                outcome += digit()
-            case "-":
-                outcome -= digit()
-            case "*":
-                outcome *= digit()
-            case "/":
-                outcome /= digit()
-            case "=":
-                print("Outcome =", outcome)
-                break
-            case _:
-                print("Wrong operator")
+    try:
+        outcome = digit()
+        while True:
+            choice = str(input("Type an operator (+, -, *, /, =): "))
+            match choice.strip():
+                case "+":  
+                    outcome += digit()
+                case "-":
+                    outcome -= digit()
+                case "*":
+                    outcome *= digit()
+                case "/":
+                    outcome /= digit()
+                case "=":
+                    print("Outcome =", outcome)
+                    break
+                case _:
+                    print("Wrong operator")
+    except Exception as wrong_user:
+        print(f"Error!!, program shut down due to {wrong_user}")
