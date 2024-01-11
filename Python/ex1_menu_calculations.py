@@ -8,7 +8,10 @@ class Validators:
         return int(input_digit)
 
 class Calculations:
-    def addition():
+    def __init__(self):
+        print("Program started")
+
+    def addition(self):
         sum = 0
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         print("Type", number_of_digits, "digit(s): ")
@@ -17,7 +20,7 @@ class Calculations:
             sum += digit
         return sum
 
-    def subtraction():
+    def subtraction(self):
         list = []
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
@@ -35,7 +38,7 @@ class Calculations:
             subtraction = list[0] - sum_of_digits
         return subtraction
 
-    def multiply():
+    def multiply(self):
         multiply = 1
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
@@ -47,7 +50,7 @@ class Calculations:
                 multiply *= digit
         return multiply
     
-    def division():
+    def division(self):
         division = None
         number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
@@ -75,15 +78,16 @@ if __name__ == "__main__":
             print("4 = Division of n digits")
             print("5 = Exit the program\n")
             choice = Validators.digit("What would you like to do?: ", "Wrong action, choose again: ")
+            calculations = Calculations()
             match choice:
                 case 1:
-                    print("\nSum is:", Calculations.addition())
+                    print("\nSum is:", calculations.addition())
                 case 2:
-                    print("\nSubtraction is:", Calculations.subtraction())
+                    print("\nSubtraction is:", calculations.subtraction())
                 case 3:
-                    print("\nMultiply equals:", Calculations.multiply())
+                    print("\nMultiply equals:", calculations.multiply())
                 case 4:
-                    print("\nDivision equals:", Calculations.division())
+                    print("\nDivision equals:", calculations.division())
                 case 5:
                     break
                 case _:

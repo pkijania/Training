@@ -7,67 +7,69 @@ class Validators:
             input_digit = input(error)
         return int(input_digit)
 
-    def new_list():
-        list = []
+class ListExercises:
+    def __init__(self):
+        self.list = []
+
+    def new_list(self):
         which_list = "0"
         while (which_list != "default" or "custom"):
             which_list = str(input("Use default list (1, 2, 0, 2, 1) or custom list? (default/custom): "))
             if which_list == "default":
-                list = [1, 2, 0, 2, 1]
+                self.list = [1, 2, 0, 2, 1]
                 break
             elif which_list == "custom":
+                new_list = []
                 list_length = Validators.digit("How many digits?: ", "Wrong digit, please type a correct digit: ")
                 for i in range(list_length):
                     number = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-                    list.append(number)
+                    new_list.append(number)
+                self.list = new_list
                 break
             else:
                 print("Wrong input. Input should be (default) or (custom)")
-        return list
 
-class List_exercises:
-    def sort(list):
+    def sort(self):
         end = False
-        for i in range (len(list)):
-            for j in range (0, len(list) - 1):
-                if list[j] > list[j + 1]:
-                    list[j], list[j + 1] = list[j + 1], list[j]
+        for i in range (len(self.list)):
+            for j in range (0, len(self.list) - 1):
+                if self.list[j] > self.list[j + 1]:
+                    self.list[j], self.list[j + 1] = self.list[j + 1], self.list[j]
                     end = True
             if end == False: 
                 break
-        return list
 
-    def min_max(list):
-        max = list[0]
-        min = list[0]
-        for i in range (len(list)):
-            if list[i] < min:
-                min = list[i]
-            if list[i] > max:
-                max = list[i]
+    def reverse(self):
+        new_list = []
+        for i in range(1, len(self.list) + 1):
+            new_list.append(self.list[-i])
+        self.list = new_list
+
+    def min_max(self):
+        max = self.list[0]
+        min = self.list[0]
+        for i in range (len(self.list)):
+            if self.list[i] < min:
+                min = self.list[i]
+            if self.list[i] > max:
+                max = self.list[i]
         return min, max
 
-    def even_odd(list):
+    def even_odd(self):
         even = 0
         odd = 0
-        for i in range(0, len(list)):
-            if list[i] % 2 == 0:
+        for i in range(0, len(self.list)):
+            if self.list[i] % 2 == 0:
                 even += 1
-            if list[i] % 2 != 0:
+            if self.list[i] % 2 != 0:
                 odd += 1
         return even, odd
 
-    def reverse(list):
-        new_list = []
-        for i in range(1, len(list) + 1):
-            new_list.append(list[-i])
-        return new_list
-
-    def palindrome(list):
-        length = len(list)
+    def palindrome(self):
+        length = len(self.list)
         outcome = True
         for i in range(0, int(length / 2)):
-            if list[i] != list[length - i - 1]:
+            if self.list[i] != self.list[length - i - 1]:
                 outcome = False
         return outcome
 
@@ -76,13 +78,14 @@ if __name__ == "__main__":
         menu_first = "\nWhat would you like to do?: "
         menu_second = "Wrong action, choose again: "
         menu_third = "Your list is:"
-        list = Validators.new_list()
+        list_exercises = ListExercises()
+        list_exercises.new_list()
         while True:
             print("\nMenu:")
             print("1 = Show info about a list")
             print("2 = Modify a list")
             print("3 = Exit\n")
-            print(menu_third, list)
+            print(menu_third, list_exercises.list)
             choice = Validators.digit(menu_first, menu_second)
             match choice:
                 case 1:
@@ -92,15 +95,15 @@ if __name__ == "__main__":
                         print("2 = Print number of even and odd digits from a list")
                         print("3 = Check if a list is a palindrome")
                         print("4 = Go back\n")
-                        print(menu_third, list)
+                        print(menu_third, list_exercises.list)
                         choice_info = Validators.digit(menu_first, menu_second)
                         match choice_info:
                             case 1:
-                                print("\nMin and max values are:", List_exercises.min_max(list))
+                                print("\nMin and max values are:", list_exercises.min_max())
                             case 2:
-                                print("\nNumber of even and odd values is:", List_exercises.even_odd(list))
+                                print("\nNumber of even and odd values is:", list_exercises.even_odd())
                             case 3:
-                                if List_exercises.palindrome(list):
+                                if list_exercises.palindrome():
                                     print("\nIt is a palindrome")
                                 else:
                                     print("\nIt is not a palindrome")
@@ -115,15 +118,15 @@ if __name__ == "__main__":
                         print("2 = Sort a list")
                         print("3 = Reverse a list")
                         print("4 = Go back\n")
-                        print(menu_third, list)
+                        print(menu_third, list_exercises.list)
                         choice_modify = Validators.digit(menu_first, menu_second)
                         match choice_modify:
                             case 1:
-                                list = Validators.new_list()
+                                list_exercises.new_list()
                             case 2:
-                                list = List_exercises.sort(list)
+                                list_exercises.sort()
                             case 3:
-                                list = List_exercises.reverse(list)
+                                list_exercises.reverse()
                             case 4:
                                 break
                             case _:
