@@ -2,20 +2,36 @@
 
 import random
 
-def duplicates():
-    old_list = []
-    list_length = int(input("How many digits? "))
-    for i in range(list_length):
-        old_list.append(random.randint(0, list_length))
-    temp_set = set()
+class DeleteDuplicates:
+    def __init__(self):
+        print("This program creates a list and then deletes all duplicates")
 
-    for item in old_list:
-        temp_set.add(item)
-    new_list = list(temp_set)
+    def create_list(self):
+        self.old_list = []
+        list_length = int(input("How many digits? "))
+        for i in range(list_length):
+            self.old_list.append(random.randint(0, list_length))
 
-    if len(old_list) == len(new_list):
-        print("List without duplicates:", new_list)
-    else:
-        print("List:", old_list, "List without duplicates:", new_list)
+    def create_set(self):
+        self.temp_set = set()
+        for item in self.old_list:
+            self.temp_set.add(item)
+    
+    def convert_to_list(self):
+        self.new_list = list(self.temp_set)
 
-duplicates()
+    def show_outcome(self):
+        if len(self.old_list) == len(self.new_list):
+            print("List without duplicates:", self.new_list)
+        else:
+            print("List:", self.old_list, "List without duplicates:", self.new_list)
+
+if __name__ == "__main__":
+    try:
+        delete_duplicates = DeleteDuplicates()
+        delete_duplicates.create_list()
+        delete_duplicates.create_set()
+        delete_duplicates.convert_to_list()
+        delete_duplicates.show_outcome()
+    except Exception as wrong_user:
+        print(f"Error!!, program shut down due to {wrong_user}")
