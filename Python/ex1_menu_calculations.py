@@ -1,11 +1,10 @@
 # 1. Create menu with calculations : addition, subtraction, multiply and division of n digits
 
-class Validators:
-    def digit(prompt, error):
-        input_digit = input(prompt)
-        while not input_digit.isdigit():
-            input_digit = input(error)
-        return int(input_digit)
+def digit(prompt, error):
+    input_digit = input(prompt)
+    while not input_digit.isdigit():
+        input_digit = input(error)
+    return int(input_digit)
 
 class Calculations:
     def __init__(self):
@@ -13,25 +12,25 @@ class Calculations:
 
     def addition(self):
         sum = 0
-        number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
+        number_of_digits = digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         print("Type", number_of_digits, "digit(s): ")
         for i in range(number_of_digits):
-            digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-            sum += digit
+            number = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+            sum += number
         return sum
 
     def subtraction(self):
         list = []
-        number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
+        number_of_digits = digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
             subtraction = number_of_digits
         elif number_of_digits == 1:
-            subtraction = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+            subtraction = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
         else:
             print("Type", number_of_digits, "digit(s): ")
             for i in range (number_of_digits):
-                digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-                list.append(digit)
+                number = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+                list.append(number)
             sum_of_digits = 0
             for i in range (1, len(list)):
                 sum_of_digits += list[i]
@@ -40,27 +39,27 @@ class Calculations:
 
     def multiply(self):
         multiply = 1
-        number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
+        number_of_digits = digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
             multiply = number_of_digits
         else :
             print("Type", number_of_digits, "digit(s): ")
             for i in range(number_of_digits):
-                digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-                multiply *= digit
+                number = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+                multiply *= number
         return multiply
     
     def division(self):
         division = None
-        number_of_digits = Validators.digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
+        number_of_digits = digit("How many digits?: ", "Wrong number of digits, please type a correct number: ")
         if number_of_digits == 0:
             division = number_of_digits
         else:
             print("Type", number_of_digits, "digit(s): ")
             list = []
             for i in range(number_of_digits):
-                digit = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
-                list.append(digit)
+                number = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+                list.append(number)
             for i in range(len(list)):
                 if division is None:
                     division = list[i]
@@ -77,7 +76,7 @@ if __name__ == "__main__":
             print("3 = Multiply of n digits")
             print("4 = Division of n digits")
             print("5 = Exit the program\n")
-            choice = Validators.digit("What would you like to do?: ", "Wrong action, choose again: ")
+            choice = digit("What would you like to do?: ", "Wrong action, choose again: ")
             calculations = Calculations()
             match choice:
                 case 1:

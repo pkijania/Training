@@ -1,11 +1,10 @@
 # 3. Create menu with list exercises - Sort numbers, find min and max value, count the amount of even and odd numbers, reverse values, check if a word or a number is a palindrome
 
-class Validators:
-    def digit(prompt, error):
-        input_digit = input(prompt)
-        while not input_digit.isdigit():
-            input_digit = input(error)
-        return int(input_digit)
+def digit(prompt, error):
+    input_digit = input(prompt)
+    while not input_digit.isdigit():
+        input_digit = input(error)
+    return int(input_digit)
 
 class ListExercises:
     def __init__(self):
@@ -20,9 +19,9 @@ class ListExercises:
                 break
             elif which_list == "custom":
                 new_list = []
-                list_length = Validators.digit("How many digits?: ", "Wrong digit, please type a correct digit: ")
+                list_length = digit("How many digits?: ", "Wrong digit, please type a correct digit: ")
                 for i in range(list_length):
-                    number = Validators.digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
+                    number = digit("Type a digit: ", "Wrong digit, please type a correct digit: ")
                     new_list.append(number)
                 self.list = new_list
                 break
@@ -86,7 +85,7 @@ if __name__ == "__main__":
             print("2 = Modify a list")
             print("3 = Exit\n")
             print(menu_third, list_exercises.list)
-            choice = Validators.digit(menu_first, menu_second)
+            choice = digit(menu_first, menu_second)
             match choice:
                 case 1:
                     while True:
@@ -96,7 +95,7 @@ if __name__ == "__main__":
                         print("3 = Check if a list is a palindrome")
                         print("4 = Go back\n")
                         print(menu_third, list_exercises.list)
-                        choice_info = Validators.digit(menu_first, menu_second)
+                        choice_info = digit(menu_first, menu_second)
                         match choice_info:
                             case 1:
                                 print("\nMin and max values are:", list_exercises.min_max())
@@ -119,7 +118,7 @@ if __name__ == "__main__":
                         print("3 = Reverse a list")
                         print("4 = Go back\n")
                         print(menu_third, list_exercises.list)
-                        choice_modify = Validators.digit(menu_first, menu_second)
+                        choice_modify = digit(menu_first, menu_second)
                         match choice_modify:
                             case 1:
                                 list_exercises.new_list()
