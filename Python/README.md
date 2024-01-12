@@ -8,7 +8,7 @@ Task: Create menu with calculations : addition, subtraction, multiply and divisi
 
 ### Ex2 - Cashmashine
 
-Task: Create cashmachine that withdraws only values of 50, 20 and 10 and has a max account balance of 500
+Task: Create cashmachine that takes and withdraws only values of 50, 20, 10 and has a max account balance of 500
 
 [Solution](ex2_cashmachine.py)
 

@@ -1,4 +1,4 @@
-# 2. Create cashmachine that withdraws only values of 50, 20 and 10 and has a max account balance of 500
+# 2. Create cashmachine that takes and withdraws only values of 50, 20, 10 and has a max account balance of 500
 
 def digit(prompt, error):
     input_digit = input(prompt)
