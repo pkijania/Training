@@ -70,12 +70,7 @@ class Calculations:
 if __name__ == "__main__":
     try:
         while True:
-            print("\nMenu:")
-            print("1 = Addition of n digits")
-            print("2 = Subtraction of n digits")
-            print("3 = Multiply of n digits")
-            print("4 = Division of n digits")
-            print("5 = Exit the program\n")
+            print("\nMenu:\n1 = Addition of n digits\n2 = Subtraction of n digits\n3 = Multiply of n digits\n4 = Division of n digits\n5 = Exit the program\n")
             choice = digit("What would you like to do?: ", "Wrong action, choose again: ")
             calculations = Calculations()
             match choice:

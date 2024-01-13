@@ -80,20 +80,13 @@ if __name__ == "__main__":
         list_exercises = ListExercises()
         list_exercises.new_list()
         while True:
-            print("\nMenu:")
-            print("1 = Show info about a list")
-            print("2 = Modify a list")
-            print("3 = Exit\n")
+            print("\nMenu:\n1 = Show info about a list\n2 = Modify a list\n3 = Exit\n")
             print(menu_third, list_exercises.list)
             choice = digit(menu_first, menu_second)
             match choice:
                 case 1:
                     while True:
-                        print("\nMenu:")
-                        print("1 = Print max and min value from a list")
-                        print("2 = Print number of even and odd digits from a list")
-                        print("3 = Check if a list is a palindrome")
-                        print("4 = Go back\n")
+                        print("\nMenu:\n1 = Print max and min value from a list\n2 = Print number of even and odd digits from a list\n3 = Check if a list is a palindrome\n4 = Go back\n")
                         print(menu_third, list_exercises.list)
                         choice_info = digit(menu_first, menu_second)
                         match choice_info:
@@ -112,11 +105,7 @@ if __name__ == "__main__":
                                 print("Wrong action")
                 case 2:
                     while True:
-                        print("\nMenu:")
-                        print("1 = Create a new list")
-                        print("2 = Sort a list")
-                        print("3 = Reverse a list")
-                        print("4 = Go back\n")
+                        print("\nMenu:\n1 = Create a new list\n2 = Sort a list\n3 = Reverse a list\n4 = Go back\n")
                         print(menu_third, list_exercises.list)
                         choice_modify = digit(menu_first, menu_second)
                         match choice_modify:

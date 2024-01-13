@@ -61,11 +61,7 @@ if __name__ == "__main__":
                 print("Wrong amount of account balance")
             else:
                 while True:
-                    print("\nMenu")
-                    print("1 = Show account balance")
-                    print("2 = Deposit money")
-                    print("3 = Pay out money")
-                    print("4 = Exit")
+                    print("\nMenu\n1 = Show account balance\n2 = Deposit money\n3 = Pay out money\n4 = Exit\n")
                     choice = digit("Choose an action: ", "Wrong action. Choose a correct action: ")
                     match choice:
                         case 1:
