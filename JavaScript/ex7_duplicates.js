@@ -2,25 +2,50 @@
 
 const prompt = require ("prompt-sync")();
 
-function duplicates(){
-    let old_list = [];
-    let list_length = parseInt(prompt("How many digits? "), 10);
-    for (let i = 0; i < list_length; i++){
-        old_list.push(Math.floor(Math.random() * list_length));
+class Duplicates{
+    counstructor(){
+        console.log("This program creates a list and then deletes all duplicates")
     }
-    const temp_set = new Set();
 
-    for (let item of old_list){
-        temp_set.add(item);
+    create_list(){
+        this.old_list = [];
+        this.list_length = parseInt(prompt("How many digits? "), 10);
+        for (let i = 0; i < this.list_length; i++){
+            this.old_list.push(Math.floor(Math.random() * this.list_length));
+        }
     }
-    let new_list = Array.from(temp_set);
-    
-    if (old_list.length === new_list.length){
-        console.log("List without duplicates:", new_list)
+
+    create_set(){
+        this.temp_set = new Set();
+
+        for (let item of this.old_list){
+            this.temp_set.add(item);
+        }
     }
-    else{
-        console.log("List:", old_list, "List without duplicates:", new_list)
+
+    convert_to_list(){
+        this.new_list = Array.from(this.temp_set);
+    }
+
+    show_outcome(){
+        if (this.old_list.length === this.new_list.length){
+            console.log("List without duplicates:", this.new_list)
+        }
+        else{
+            console.log("List:", this.old_list, "List without duplicates:", this.new_list)
+        }
     }
 }
 
-duplicates()
+if (require.main === module){
+    try {
+        let duplicates = new Duplicates();
+        duplicates.create_list();
+        duplicates.create_set();
+        duplicates.convert_to_list();
+        console.log(duplicates.show_outcome())
+    }
+    catch (error) {
+        console.error(error)
+    }
+}

@@ -2,19 +2,44 @@
 
 const prompt = require ("prompt-sync")();
 
-function heads_or_tails(){
-    let user = prompt("heads or tails? ");
-    let computer = ["heads", "tails"];
-    let computer_random = Math.floor(Math.random() * computer.length);
-    let computer_choice = computer[computer_random];
-    if (user === computer_choice){
-        console.log("correct")
+class TossGame{
+    constructor(){
+        this.correct_choices = ["heads", "tails"];
     }
-    else{
-        console.log("wrong")
+
+    users_choice(){
+        this.user = prompt("heads or tails? ");
     }
-    console.log("user: ", user)
-    console.log("computer: ", computer_choice)   
+
+    computers_choice(){
+        this.computer_random = Math.floor(Math.random() * this.correct_choices.length);
+        this.computer_choice = this.correct_choices[this.computer_random];
+    }
+
+    check_outcome(){
+        if (this.user === this.computer_choice){
+            console.log("correct")
+        }
+        else{
+            console.log("wrong")
+        }
+    }
+
+    show_outcome(){
+        console.log("user: ", this.user)
+        console.log("computer: ", this.computer_choice)
+    }
 }
 
-heads_or_tails();
+if (require.main === module){
+    try {
+        let toss_game = new TossGame();
+        toss_game.users_choice();
+        toss_game.computers_choice();
+        toss_game.check_outcome();
+        toss_game.show_outcome();
+    }
+    catch (error) {
+        console.error(error)
+    }
+}

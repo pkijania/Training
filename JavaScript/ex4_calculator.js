@@ -10,30 +10,34 @@ function digit(){
     return parseInt(number, 10);
 }
 
-function calculator(){
-    let outcome = digit();
-    while (true){
-        let choice = String(prompt("Type an operator (+, -, *, /, =): "));
-        switch (choice.trim()){
-            case ("+"):
-                outcome += digit();
-                break;
-            case ("-"):
-                outcome -= digit();
-                break;
-            case ("*"):
-                outcome *= digit();
-                break;
-            case ("/"):
-                outcome /= digit();
-                break;
-            case ("="):
-                return outcome;
-            default:
-                console.log("Wrong operator")
-                break;
+if (require.main === module){
+    try {
+        let outcome = digit();
+        while (true){
+            let choice = String(prompt("Type an operator (+, -, *, /, =): "));
+            switch (choice.trim()){
+                case ("+"):
+                    outcome += digit();
+                    break;
+                case ("-"):
+                    outcome -= digit();
+                    break;
+                case ("*"):
+                    outcome *= digit();
+                    break;
+                case ("/"):
+                    outcome /= digit();
+                    break;
+                case ("="):
+                    console.log("Outcome =", outcome)
+                    return outcome;
+                default:
+                    console.log("Wrong operator")
+                    break;
+            }
         }
     }
+    catch (error) {
+        console.error(error)
+    }
 }
-
-console.log("Outcome =", calculator())
