@@ -1,3 +1,5 @@
+# 9. Solve the 'ax^2 + bx + c = 0' quadratic equation and test it.
+
 import math
 
 class QuadraticEquation:

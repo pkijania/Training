@@ -48,8 +48,8 @@ Task: Create a list with random numbers and count every number
 
 [Solution](ex8_count_numbers.py)
 
-### Ex8 - Count quadratic equation
+### Ex9 - Count quadratic equation
 
-Task: Solve the 'ax^2 + bx + c = 0' quadratic equation.
+Task: Solve the 'ax^2 + bx + c = 0' quadratic equation and test it.
 
 [Solution](ex9_quadratic_equation.py)
