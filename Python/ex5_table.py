@@ -29,5 +29,5 @@ if __name__ == "__main__":
         table.type_data()
         table.create_table()
         table.sum_of_elements()
-    except Exception as wrong_user:
-        print(f"Error!!, program shut down due to {wrong_user}")
+    except Exception as error:
+        print(f"Error!!, program shut down due to {error}")

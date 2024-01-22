@@ -75,5 +75,5 @@ if __name__ == "__main__":
                             break
                         case _:
                             print("Wrong action")
-    except Exception as wrong_user:
-        print(f"Error!!, program shut down due to {wrong_user}")
+    except Exception as error:
+        print(f"Error!!, program shut down due to {error}")

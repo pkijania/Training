@@ -31,5 +31,5 @@ if __name__ == "__main__":
         toss_game.computer_choice()
         toss_game.check_outcome()
         toss_game.show_outcome()
-    except Exception as wrong_user:
-        print(f"Error!!, program shut down due to {wrong_user}")
+    except Exception as error:
+        print(f"Error!!, program shut down due to {error}")

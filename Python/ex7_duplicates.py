@@ -33,5 +33,5 @@ if __name__ == "__main__":
         delete_duplicates.create_set()
         delete_duplicates.convert_to_list()
         delete_duplicates.show_outcome()
-    except Exception as wrong_user:
-        print(f"Error!!, program shut down due to {wrong_user}")
+    except Exception as error:
+        print(f"Error!!, program shut down due to {error}")

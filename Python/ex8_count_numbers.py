@@ -40,5 +40,5 @@ if __name__ == "__main__":
         count_numbers.count_numbers()
         count_numbers.show_list()
         print("(Digit, number of digits)", count_numbers.get_outcome())
-    except Exception as wrong_user:
-        print(f"Error!!, program shut down due to {wrong_user}")
+    except Exception as error:
+        print(f"Error!!, program shut down due to {error}")

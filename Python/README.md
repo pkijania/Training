@@ -47,3 +47,9 @@ Task: Create a list with random numbers and delete duplicates
 Task: Create a list with random numbers and count every number
 
 [Solution](ex8_count_numbers.py)
+
+### Ex8 - Count quadratic equation
+
+Task: Solve the 'ax^2 + bx + c = 0' quadratic equation.
+
+[Solution](ex9_quadratic_equation.py)
