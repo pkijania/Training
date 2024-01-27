@@ -26,7 +26,7 @@ Task: Create simple calculator
 
 ### Ex5 - Table
 
-Task: Create and display a table of n columns and n rows and count the sum of all it's elements
+Task: Create a table of n columns and n rows and count the sum of all it's elements. Paste all data into a file and print them in terminal
 
 [Solution](ex5_table.py)
 
