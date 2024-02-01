@@ -53,3 +53,9 @@ Task: Create a list with random numbers and count every number
 Task: Solve the 'ax^2 + bx + c = 0' quadratic equation and test it.
 
 [Solution](ex9_quadratic_equation.py)
+
+### Ex10 - Database
+
+Task: Create a table in postgres, fill it with data and print some of it 
+
+[Solution](ex10_data_base.py)
