@@ -49,7 +49,7 @@ class DataBase:
 if __name__ == "__main__":
     try:
         data_base = DataBase()
-        action = True
+        action = False
         if action:
             data_base.create_table()
             data_base.instert_data_into_table()
