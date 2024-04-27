@@ -37,12 +37,6 @@ Various small excercises
 
 [Exercises](JavaScript/README.md)
 
-### Selenium
-
-Various page tests
-
-[Exercises](Selenium/README.md)
-
 ### SQL
 
 Small project for learning advanced SQLs

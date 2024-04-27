@@ -4,7 +4,7 @@ class Table:
     def __init__(self):
         self.table = self.file_table = []
         self.sum = 0
-        self.path = r"D:\Programy\Github\Testing\Python\Files_for_python_exercises\table.txt"
+        self.path = r"D:\Programy\Github\Training\Python\Files_for_python_exercises\table.txt"
 
     def type_data(self):
         self.row = int(input("How many rows? "))
